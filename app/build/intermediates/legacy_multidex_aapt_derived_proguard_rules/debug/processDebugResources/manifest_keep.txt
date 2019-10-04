@@ -1,0 +1,2 @@
+# Referenced at D:\tamasj\Yoohoo Source Code\Yoohoo\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:31
+-keep class com.verbosetech.yoohoo.BaseApplication { <init>(...); }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "292913669083",
+    "firebase_url": "https://messa-efb72.firebaseio.com",
+    "project_id": "messa-efb72",
+    "storage_bucket": "messa-efb72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292913669083:android:e8c0dbc671a6ac0f643dfe",
+        "android_client_info": {
+          "package_name": "com.verbosetech.yoohoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292913669083-l7tl923gs83vej8a5sh7bjfe4oqm542a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYMkoTcNZi8j6dZroSzP15VAVkO88JCKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292913669083-l7tl923gs83vej8a5sh7bjfe4oqm542a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
