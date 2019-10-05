@@ -640,6 +640,10 @@
         "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\emoji-google-0.5.1.aar\\a6e0ddf7734e24e883886605e90d7119\\res\\drawable-nodpi-v4\\emoji_google_1f6b3.png"
     },
     {
+        "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chat_main.xml.flat",
+        "source": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\src\\main\\res\\layout\\activity_chat_main.xml"
+    },
+    {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_power_settings_new_dark_24dp.png.flat",
         "source": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_power_settings_new_dark_24dp.png"
     },
@@ -2326,10 +2330,6 @@
     {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\fc09a7b735ef743aa6a7f7c6e4ff11ab\\res\\drawable\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
-        "source": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_location.png.flat",
@@ -10672,6 +10672,10 @@
         "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\1fadc1adf222d0f1d4e8ad5af1049ec4\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_chat_main.xml.flat",
+        "source": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\src\\main\\res\\layout\\content_chat_main.xml"
+    },
+    {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_emoji_google_1f983.png.flat",
         "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\emoji-google-0.5.1.aar\\a6e0ddf7734e24e883886605e90d7119\\res\\drawable-nodpi-v4\\emoji_google_1f983.png"
     },
@@ -11674,10 +11678,6 @@
     {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_emoji_google_1f1ed_1f1f0.png.flat",
         "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\emoji-google-0.5.1.aar\\a6e0ddf7734e24e883886605e90d7119\\res\\drawable-nodpi-v4\\emoji_google_1f1ed_1f1f0.png"
-    },
-    {
-        "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_emoji_google_1f93c_200d_2640_fe0f.png.flat",

@@ -1,19 +1,19 @@
 #Internal package file, do not edit.
-#Thu Oct 03 20:15:46 EET 2019
+#Sat Oct 05 03:24:23 EET 2019
 4.path=classes.dex
-8.set=NATIVE_RESOURCE
+8.set=DEX
 6.path=lib/x86/librealm-jni.so
 0.baseType=DIRECTORY
 10.path=lib/x86/libsinch-android-rtc.so
 5.baseType=DIRECTORY
 1.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
-8.path=lib/arm64-v8a/librealm-jni.so
+8.path=classes2.dex
 3.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 4.set=DEX
 5.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 7.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 11.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
-9.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+9.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 1.baseType=DIRECTORY
 11.set=NATIVE_RESOURCE
 0.set=DEX
@@ -30,7 +30,7 @@
 0.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 7.path=lib/arm64-v8a/libsinch-android-rtc.so
 11.path=lib/x86_64/libsinch-android-rtc.so
-9.path=classes2.dex
+9.path=lib/arm64-v8a/librealm-jni.so
 6.set=NATIVE_RESOURCE
 2.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 11.baseType=DIRECTORY
@@ -38,10 +38,10 @@
 3.baseType=DIRECTORY
 6.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 10.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
-8.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+8.base=D\:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 2.set=NATIVE_RESOURCE
 8.baseType=DIRECTORY
-9.set=DEX
+9.set=NATIVE_RESOURCE
 count=12
 4.baseType=DIRECTORY
 5.set=NATIVE_RESOURCE

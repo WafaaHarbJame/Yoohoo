@@ -13,8 +13,8 @@
 
     <string name="geo_api_key" translatable="false"></string>
     <string name="sinch_app_environment" translatable="false">sandbox.sinch.com</string>
-    <string name="sinch_app_key" translatable="false"></string>
-    <string name="sinch_app_secret" translatable="false"></string>
+    <string name="sinch_app_key" translatable="false">f04819d5-d259-42f5-aed7-e07e23fdc4f1</string>
+    <string name="sinch_app_secret" translatable="false">rtzeHeF3f0ux7/0793UYwA==</string>
     <string name="support_email" translatable="false">opuslabsin@gmail.com</string>
 
 </resources>

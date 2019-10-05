@@ -26,8 +26,8 @@ android {
         resValue 'string', "app_name", "YooHoo"
         resValue 'string', "support_email", "opuslabsin@gmail.com"
         resValue 'string', "geo_api_key", ""
-        resValue 'string', "sinch_app_key", ""
-        resValue 'string', "sinch_app_secret", ""
+        resValue 'string', "sinch_app_key", "f04819d5-d259-42f5-aed7-e07e23fdc4f1"
+        resValue 'string', "sinch_app_secret", "rtzeHeF3f0ux7/0793UYwA=="
         resValue 'string', "sinch_app_environment", "sandbox.sinch.com"
         resValue 'string', "authority", applicationId + ".fileprovider"
 

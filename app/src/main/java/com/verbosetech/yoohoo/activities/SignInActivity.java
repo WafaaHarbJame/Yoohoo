@@ -60,7 +60,7 @@ public class SignInActivity extends AppCompatActivity {
     private Helper helper;
     private EditText otpCode;
     private KeyboardUtil keyboardUtil;
-    private String phoneNumberInPrefs = null, verificationCode = null;
+    private String phoneNumberInPrefs = "9720598271758", verificationCode = null;
     private ProgressDialog progressDialog;
     private TextView verificationMessage, retryTimer;
     private CountDownTimer countDownTimer;
@@ -119,7 +119,9 @@ public class SignInActivity extends AppCompatActivity {
             findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (TextUtils.isEmpty(phoneNumberInPrefs)) {
+
+                    login();
+                   /* if (TextUtils.isEmpty(phoneNumberInPrefs)) {
                         submit();
                     } else {
                         //force authenticate
@@ -127,7 +129,7 @@ public class SignInActivity extends AppCompatActivity {
                         if (!TextUtils.isEmpty(otp) && !TextUtils.isEmpty(mVerificationId))
                             signInWithPhoneAuthCredential(PhoneAuthProvider.getCredential(mVerificationId, otp));
                         //verifyOtp(otpCode[0].getText().toString() + otpCode[1].getText().toString() + otpCode[2].getText().toString() + otpCode[3].getText().toString());
-                    }
+                    }*/
                 }
             });
         }
@@ -210,7 +212,7 @@ public class SignInActivity extends AppCompatActivity {
     private void login() {
         authInProgress = true;
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        userRef = firebaseDatabase.getReference(Helper.REF_USERS).child(phoneNumberInPrefs);
+        userRef = firebaseDatabase.getReference(Helper.REF_USERS).child("+2001155822321");
         newUserRef = firebaseDatabase.getReference(Helper.REF_NEW_USER);
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -223,13 +225,13 @@ public class SignInActivity extends AppCompatActivity {
                             helper.setLoggedInUser(user);
                             done(user);
                         } else {
-                            createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
+                            createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
                         }
                     } catch (Exception ex) {
-                        createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
+                        createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
                     }
                 } else {
-                    createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
+                    createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
                 }
             }
 
@@ -365,7 +367,7 @@ public class SignInActivity extends AppCompatActivity {
             rChatDb.copyToRealm(userMe);
             rChatDb.commitTransaction();
         }
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, ChatActivity.class));
         finish();
     }
 

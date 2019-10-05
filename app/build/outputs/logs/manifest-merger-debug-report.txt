@@ -294,7 +294,7 @@ MERGED from [com.google.android.gms:play-services-ads-base:17.0.0] C:\Users\eng 
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:26:9-40
 	android:name
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:21:9-40
-activity#com.verbosetech.yoohoo.activities.MainActivity
+activity#com.verbosetech.yoohoo.activities.MainChatActivity
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:27:9-31:70
 	android:screenOrientation
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:30:13-49
@@ -303,21 +303,21 @@ ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:
 	android:windowSoftInputMode
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:31:13-67
 	android:name
-		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:28:13-52
+		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:28:13-56
 activity#com.verbosetech.yoohoo.activities.SignInActivity
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:screenOrientation
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:35:13-49
 	android:parentActivityName
-		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:34:13-66
+		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:34:13-70
 	android:windowSoftInputMode
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:36:13-67
 	android:name
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:33:13-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:37:13-39:60
+ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:37:13-39:64
 	android:value
-		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:39:17-57
+		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:39:17-61
 	android:name
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:38:17-63
 activity#com.verbosetech.yoohoo.activities.ImageViewerActivity
@@ -414,7 +414,7 @@ ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:98:13-67
 	android:name
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:96:13-58
-activity#com.verbosetech.yoohoo.activities.SplashActivity
+activity#com.verbosetech.yoohoo.activities.ChatActivity
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:99:9-103:70
 	android:screenOrientation
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:101:13-49
@@ -423,7 +423,7 @@ ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:
 	android:theme
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:102:13-52
 	android:name
-		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:100:13-54
+		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:100:13-52
 activity#com.verbosetech.yoohoo.activities.CallScreenActivity
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:104:9-106:52
 	android:screenOrientation
@@ -436,7 +436,7 @@ ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:109:13-49
 	android:name
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:108:13-66
-activity#com.verbosetech.yoohoo.activities.ChatActivity
+activity#com.verbosetech.yoohoo.activities.SplashActivity
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:110:9-121:20
 	android:screenOrientation
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:112:13-49
@@ -445,7 +445,7 @@ ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:
 	android:theme
 		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:113:13-52
 	android:name
-		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:111:13-52
+		ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:111:13-54
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
 ADDED from D:\tamasj\Yoohoo Source Code\Yoohoo\app\src\main\AndroidManifest.xml:115:13-120:29
 action#android.intent.action.VIEW

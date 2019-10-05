@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.verbosetech.yoohoo.R;
 import com.verbosetech.yoohoo.utils.Helper;
@@ -19,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, helper.getLoggedInUser() != null ? MainActivity.class : SignInActivity.class));
+                startActivity(new Intent(SplashActivity.this, helper.getLoggedInUser() != null ? MainChatActivity.class : SignInActivity.class));
                 finish();
             }
         }, 1500);

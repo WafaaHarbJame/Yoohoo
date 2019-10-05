@@ -38,18 +38,18 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.verbosetech.yoohoo.activities.MainActivity"
+            android:name="com.verbosetech.yoohoo.activities.MainChatActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.verbosetech.yoohoo.activities.SignInActivity"
-            android:parentActivityName="com.verbosetech.yoohoo.activities.MainActivity"
+            android:parentActivityName="com.verbosetech.yoohoo.activities.MainChatActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity" />
+                android:value=".activities.MainChatActivity" />
         </activity>
         <activity android:name="com.verbosetech.yoohoo.activities.ImageViewerActivity" />
 
@@ -109,7 +109,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.verbosetech.yoohoo.activities.SplashActivity"
+            android:name="com.verbosetech.yoohoo.activities.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
@@ -120,7 +120,7 @@
             android:name="com.verbosetech.yoohoo.activities.IncomingCallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.verbosetech.yoohoo.activities.ChatActivity"
+            android:name="com.verbosetech.yoohoo.activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" >

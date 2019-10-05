@@ -6230,10 +6230,10 @@ public final class R {
     public static final int abc_select_dialog_material=0x7f0b0019;
     public static final int abc_tooltip=0x7f0b001a;
     public static final int activity_call_screen=0x7f0b001b;
-    public static final int activity_chats=0x7f0b001c;
-    public static final int activity_image_viewer=0x7f0b001d;
-    public static final int activity_incoming_call_screen=0x7f0b001e;
-    public static final int activity_main=0x7f0b001f;
+    public static final int activity_chat_main=0x7f0b001c;
+    public static final int activity_chats=0x7f0b001d;
+    public static final int activity_image_viewer=0x7f0b001e;
+    public static final int activity_incoming_call_screen=0x7f0b001f;
     public static final int activity_sign_in_1=0x7f0b0020;
     public static final int activity_sign_in_2=0x7f0b0021;
     public static final int activity_splash=0x7f0b0022;
@@ -6242,7 +6242,7 @@ public final class R {
     public static final int adapter_item_user=0x7f0b0025;
     public static final int browser_actions_context_menu_page=0x7f0b0026;
     public static final int browser_actions_context_menu_row=0x7f0b0027;
-    public static final int content_main=0x7f0b0028;
+    public static final int content_chat_main=0x7f0b0028;
     public static final int design_bottom_navigation_item=0x7f0b0029;
     public static final int design_bottom_sheet_dialog=0x7f0b002a;
     public static final int design_layout_snackbar=0x7f0b002b;

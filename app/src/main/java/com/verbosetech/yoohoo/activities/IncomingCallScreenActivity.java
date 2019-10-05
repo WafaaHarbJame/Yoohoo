@@ -179,7 +179,7 @@ public class IncomingCallScreenActivity extends BaseActivity {
     }
 
     private void notifyMisscall(LogCall logCall) {
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 56, new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 56, new Intent(this, MainChatActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder notificationBuilder = null;
