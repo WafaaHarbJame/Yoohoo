@@ -3,7 +3,7 @@ package com.verbosetech.yoohoo.viewHolders;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,13 +14,10 @@ import com.bumptech.glide.Glide;
 import com.verbosetech.yoohoo.R;
 import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.Helper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.HashMap;
 
 /**
  * Created by mayank on 11/5/17.

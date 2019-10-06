@@ -40,19 +40,19 @@
                 android:paddingRight="16dp"
                 android:singleLine="true" />
 
-            <android.support.v4.widget.SwipeRefreshLayout
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/menu_recycler_view_swipe_refresh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/searchContact">
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/menu_recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
                     android:padding="8dp" />
-            </android.support.v4.widget.SwipeRefreshLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
             <!--<TextView-->
             <!--android:id="@+id/invite"-->

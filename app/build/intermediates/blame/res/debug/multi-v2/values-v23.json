@@ -4,7 +4,7 @@
             "outputFile": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.1.1.aar\\0e61e677119395cb09ffaa9190fcbc0b\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-1.0.0.aar\\8bcf0af68fdde8ddfdb2b6113ee0c06c\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\1fadc1adf222d0f1d4e8ad5af1049ec4\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\ceb63774e8f8e9ead97659fb06c6befa\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

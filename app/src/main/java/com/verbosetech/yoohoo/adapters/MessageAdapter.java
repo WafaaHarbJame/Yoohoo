@@ -1,8 +1,8 @@
 package com.verbosetech.yoohoo.adapters;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +11,6 @@ import com.verbosetech.yoohoo.R;
 import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
-import com.verbosetech.yoohoo.utils.Helper;
 import com.verbosetech.yoohoo.viewHolders.BaseMessageViewHolder;
 import com.verbosetech.yoohoo.viewHolders.MessageAttachmentAudioViewHolder;
 import com.verbosetech.yoohoo.viewHolders.MessageAttachmentContactViewHolder;
@@ -25,7 +23,6 @@ import com.verbosetech.yoohoo.viewHolders.MessageTextViewHolder;
 import com.verbosetech.yoohoo.viewHolders.MessageTypingViewHolder;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by a_man on 1/10/2017.

@@ -1,7 +1,7 @@
 package com.verbosetech.yoohoo.viewHolders;
 
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -13,10 +13,7 @@ import com.verbosetech.yoohoo.R;
 import com.verbosetech.yoohoo.activities.ImageViewerActivity;
 import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.Helper;
-
-import java.util.HashMap;
 
 /**
  * Created by mayank on 11/5/17.

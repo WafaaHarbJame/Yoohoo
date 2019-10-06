@@ -19,7 +19,7 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.verbosetech.yoohoo"
 
@@ -61,12 +61,12 @@ dependencies {
     implementation('com.googlecode.ez-vcard:ez-vcard:0.10.4') {
         exclude group: 'org.freemarker'
     }
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.0'
     //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
 
     implementation 'com.google.firebase:firebase-core:16.0.4'
     implementation 'com.google.firebase:firebase-database:16.0.4'

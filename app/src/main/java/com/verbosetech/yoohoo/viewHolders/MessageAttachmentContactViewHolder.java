@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
@@ -23,13 +23,10 @@ import com.verbosetech.yoohoo.adapters.ContactsAdapter;
 import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.Helper;
 import com.verbosetech.yoohoo.utils.MyFileProvider;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.HashMap;
 
 import ezvcard.Ezvcard;
 import ezvcard.VCard;

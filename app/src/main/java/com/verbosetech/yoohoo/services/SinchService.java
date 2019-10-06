@@ -55,9 +55,9 @@ public class SinchService extends Service {
         if (mSinchClient == null) {
             mUserId = userName;
             mSinchClient = Sinch.getSinchClientBuilder().context(getApplicationContext()).userId(userName)
-                    .applicationKey("f04819d5-d259-42f5-aed7-e07e23fdc4f1")
+                    .applicationKey("b7ff199f-20d0-4a77-8f14-29ae9644a8c0")
                     //f04819d5-d259-42f5-aed7-e07e23fdc4f1
-                    .applicationSecret("rtzeHeF3f0ux7/0793UYwA==")
+                    .applicationSecret("WlXNfKEZp0WAyXOJ1sybIw==")
                     //rtzeHeF3f0ux7/0793UYwA==
                     .environmentHost(getString(R.string.sinch_app_environment)).build();
 

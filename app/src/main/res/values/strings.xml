@@ -123,6 +123,7 @@ Neque aliquam vestibulum morbi blandit. Molestie nunc non blandit massa enim nec
 
 
     <string name="group_participants_error">Unable to load all group members. Please refresh your users then check again.</string>
+    <string name="key">b7ff199f-20d0-4a77-8f14-29ae9644a8c0</string>
 
-  />
+    />
 </resources>

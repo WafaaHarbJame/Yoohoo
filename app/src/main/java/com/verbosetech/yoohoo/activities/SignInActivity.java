@@ -1,15 +1,12 @@
 package com.verbosetech.yoohoo.activities;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.CountDownTimer;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatSpinner;
+import android.os.CountDownTimer;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Patterns;
@@ -19,11 +16,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSpinner;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,7 +60,7 @@ public class SignInActivity extends AppCompatActivity {
     private Helper helper;
     private EditText otpCode;
     private KeyboardUtil keyboardUtil;
-    private String phoneNumberInPrefs = "9720598271758", verificationCode = null;
+    private String phoneNumberInPrefs = null, verificationCode = null;
     private ProgressDialog progressDialog;
     private TextView verificationMessage, retryTimer;
     private CountDownTimer countDownTimer;
@@ -73,9 +73,7 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseApp.initializeApp(this);
         Realm.init(this);
-
         rChatDb = Helper.getRealmInstance();
         helper = new Helper(this);
 
@@ -119,9 +117,7 @@ public class SignInActivity extends AppCompatActivity {
             findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    login();
-                   /* if (TextUtils.isEmpty(phoneNumberInPrefs)) {
+                    if (TextUtils.isEmpty(phoneNumberInPrefs)) {
                         submit();
                     } else {
                         //force authenticate
@@ -129,7 +125,7 @@ public class SignInActivity extends AppCompatActivity {
                         if (!TextUtils.isEmpty(otp) && !TextUtils.isEmpty(mVerificationId))
                             signInWithPhoneAuthCredential(PhoneAuthProvider.getCredential(mVerificationId, otp));
                         //verifyOtp(otpCode[0].getText().toString() + otpCode[1].getText().toString() + otpCode[2].getText().toString() + otpCode[3].getText().toString());
-                    }*/
+                    }
                 }
             });
         }
@@ -212,7 +208,7 @@ public class SignInActivity extends AppCompatActivity {
     private void login() {
         authInProgress = true;
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        userRef = firebaseDatabase.getReference(Helper.REF_USERS).child("+2001155822321");
+        userRef = firebaseDatabase.getReference(Helper.REF_USERS).child(phoneNumberInPrefs);
         newUserRef = firebaseDatabase.getReference(Helper.REF_NEW_USER);
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -225,13 +221,13 @@ public class SignInActivity extends AppCompatActivity {
                             helper.setLoggedInUser(user);
                             done(user);
                         } else {
-                            createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
+                            createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
                         }
                     } catch (Exception ex) {
-                        createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
+                        createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
                     }
                 } else {
-                    createUser(new User("+2001155822321", "+2001155822321", getString(R.string.app_name), ""));
+                    createUser(new User(phoneNumberInPrefs, phoneNumberInPrefs, getString(R.string.app_name), ""));
                 }
             }
 
@@ -367,7 +363,7 @@ public class SignInActivity extends AppCompatActivity {
             rChatDb.copyToRealm(userMe);
             rChatDb.commitTransaction();
         }
-        startActivity(new Intent(this, ChatActivity.class));
+        startActivity(new Intent(this, MainChatActivity.class));
         finish();
     }
 

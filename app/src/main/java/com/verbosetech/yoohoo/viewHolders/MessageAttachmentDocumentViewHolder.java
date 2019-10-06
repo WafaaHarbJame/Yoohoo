@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.CardView;
+import androidx.core.content.ContextCompat;
+import androidx.cardview.widget.CardView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -16,13 +16,11 @@ import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.Attachment;
 import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.FileUtils;
 import com.verbosetech.yoohoo.utils.Helper;
 import com.verbosetech.yoohoo.utils.MyFileProvider;
 
 import java.io.File;
-import java.util.HashMap;
 
 /**
  * Created by mayank on 11/5/17.

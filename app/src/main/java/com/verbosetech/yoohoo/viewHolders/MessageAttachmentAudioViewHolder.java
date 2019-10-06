@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,13 +18,11 @@ import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.Attachment;
 import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.FileUtils;
 import com.verbosetech.yoohoo.utils.Helper;
 import com.verbosetech.yoohoo.utils.MyFileProvider;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 /**

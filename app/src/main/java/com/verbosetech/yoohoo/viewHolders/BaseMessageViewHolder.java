@@ -2,12 +2,11 @@ package com.verbosetech.yoohoo.viewHolders;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -16,11 +15,8 @@ import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.DownloadFileEvent;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.GeneralUtils;
 import com.verbosetech.yoohoo.utils.Helper;
-
-import java.util.HashMap;
 
 import static com.verbosetech.yoohoo.adapters.MessageAdapter.OTHER;
 

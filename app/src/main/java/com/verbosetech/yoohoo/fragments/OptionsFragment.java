@@ -1,52 +1,26 @@
 package com.verbosetech.yoohoo.fragments;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.LocalBroadcastManager;
-import android.text.TextUtils;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.kbeanie.multipicker.api.CameraImagePicker;
-import com.kbeanie.multipicker.api.ImagePicker;
-import com.kbeanie.multipicker.api.Picker;
-import com.kbeanie.multipicker.api.callbacks.ImagePickerCallback;
-import com.kbeanie.multipicker.api.entity.ChosenImage;
 import com.verbosetech.yoohoo.R;
-import com.verbosetech.yoohoo.models.Attachment;
-import com.verbosetech.yoohoo.models.AttachmentTypes;
 import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.services.SinchService;
 import com.verbosetech.yoohoo.utils.ConfirmationDialogFragment;
-import com.verbosetech.yoohoo.utils.FirebaseUploader;
 import com.verbosetech.yoohoo.utils.Helper;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by a_man on 01-01-2018.

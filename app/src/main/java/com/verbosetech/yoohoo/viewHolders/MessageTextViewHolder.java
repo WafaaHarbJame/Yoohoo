@@ -3,7 +3,7 @@ package com.verbosetech.yoohoo.viewHolders;
 import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
@@ -13,11 +13,8 @@ import com.vanniktech.emoji.EmojiTextView;
 import com.verbosetech.yoohoo.R;
 import com.verbosetech.yoohoo.interfaces.OnMessageItemClick;
 import com.verbosetech.yoohoo.models.Message;
-import com.verbosetech.yoohoo.models.User;
 import com.verbosetech.yoohoo.utils.GeneralUtils;
 import com.verbosetech.yoohoo.utils.LinkTransformationMethod;
-
-import java.util.HashMap;
 
 import static com.verbosetech.yoohoo.adapters.MessageAdapter.MY;
 

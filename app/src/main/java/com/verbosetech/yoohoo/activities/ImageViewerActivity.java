@@ -3,16 +3,14 @@ package com.verbosetech.yoohoo.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import com.bumptech.glide.Glide;
 import com.github.chrisbanes.photoview.PhotoView;
 import com.verbosetech.yoohoo.R;
-import com.verbosetech.yoohoo.models.AttachmentTypes;
-import com.verbosetech.yoohoo.models.Message;
 
 import java.io.File;
 
