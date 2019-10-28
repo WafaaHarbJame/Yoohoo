@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.iceteck.silicompressorr:silicompressor:2.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/a27dbaacb6303fea5ff6212f3d5d0aca/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/a27dbaacb6303fea5ff6212f3d5d0aca/jars/libs/isoparser-1.0.6.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/a27dbaacb6303fea5ff6212f3d5d0aca/jars/libs/aspectjrt-1.7.3.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/a27dbaacb6303fea5ff6212f3d5d0aca/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/31dd3fbacbadb9e371aab9bceab1871b/jars/libs/isoparser-1.0.6.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/31dd3fbacbadb9e371aab9bceab1871b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/31dd3fbacbadb9e371aab9bceab1871b/jars/libs/aspectjrt-1.7.3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-silicompressor-2.1.aar/31dd3fbacbadb9e371aab9bceab1871b/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
