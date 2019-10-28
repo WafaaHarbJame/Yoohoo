@@ -17,7 +17,7 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <com.verbosetech.yoohoo.views.MyRecyclerView
+    <com.verbosetech1.yoohoo.views.MyRecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

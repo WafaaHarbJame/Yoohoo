@@ -2,8 +2,8 @@ package io.realm;
 
 
 public interface com_verbosetech_yoohoo_models_ChatRealmProxyInterface {
-    public RealmList<com.verbosetech.yoohoo.models.Message> realmGet$messages();
-    public void realmSet$messages(RealmList<com.verbosetech.yoohoo.models.Message> value);
+    public RealmList<com.verbosetech1.yoohoo.models.Message> realmGet$messages();
+    public void realmSet$messages(RealmList<com.verbosetech1.yoohoo.models.Message> value);
     public String realmGet$lastMessage();
     public void realmSet$lastMessage(String value);
     public String realmGet$myId();

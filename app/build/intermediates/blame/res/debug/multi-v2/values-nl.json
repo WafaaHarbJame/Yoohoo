@@ -4,7 +4,24 @@
             "outputFile": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\8c0ef6de19ebd64b02af03dbeb21af3a\\res\\values-nl\\values-nl.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\bb16c4ac90b72cf07b612f4719d17f0b\\res\\values-nl\\values-nl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,328,435,521,629,749,826,903,995,1089,1190,1284,1385,1479,1575,1670,1762,1854,1936,2047,2151,2250,2365,2478,2581,2736,2839",
+                        "endColumns": "117,104,106,85,107,119,76,76,91,93,100,93,100,93,95,94,91,91,81,110,103,98,114,112,102,154,102,81",
+                        "endOffsets": "218,323,430,516,624,744,821,898,990,1084,1185,1279,1380,1474,1570,1665,1757,1849,1931,2042,2146,2245,2360,2473,2576,2731,2834,2916"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,57",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,328,435,521,629,749,826,903,995,1089,1190,1284,1385,1479,1575,1670,1762,1854,1936,2047,2151,2250,2365,2478,2581,2736,6566",
+                        "endColumns": "117,104,106,85,107,119,76,76,91,93,100,93,100,93,95,94,91,91,81,110,103,98,114,112,102,154,102,81",
+                        "endOffsets": "218,323,430,516,624,744,821,898,990,1084,1185,1279,1380,1474,1570,1665,1757,1849,1931,2042,2146,2245,2360,2473,2576,2731,2834,6643"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\4397b18da0a0ab72e23892f68f3b0692\\res\\values-nl\\values-nl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-ads-17.0.0.aar\\60d4a2c1cd48e1196d85eafe5ec1335a\\res\\values-nl\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "197,272,392,460,526,605,716",
-                        "endColumns": "74,119,67,65,78,110,72",
-                        "endOffsets": "271,391,459,525,604,715,788"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5946,6025,6149,6221,6291,6374,6489",
-                        "endColumns": "78,123,71,69,82,114,76",
-                        "endOffsets": "6020,6144,6216,6286,6369,6484,6561"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\1abd979b932ef85949868ab78b787be6\\res\\values-nl\\values.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\e052bf8cf0aa11cf8eab1a2e6ed79b1b\\res\\values-nl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.1.0.aar\\7ecc1edc96e69ae232c372190166ff97\\res\\values-nl\\values.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.1.0.aar\\7fd92f3984408692193f20e28d406c2b\\res\\values-nl\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,24 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-places-16.0.0.aar\\86a3785cb04cb39fe1cd9acd256525d8\\res\\values-nl\\values.xml",
-                    "from": {
-                        "startLines": "4,5",
-                        "startColumns": "0,0",
-                        "startOffsets": "193,299",
-                        "endColumns": "105,91",
-                        "endOffsets": "298,390"
-                    },
-                    "to": {
-                        "startLines": "48,49",
-                        "startColumns": "4,4",
-                        "startOffsets": "5740,5850",
-                        "endColumns": "109,95",
-                        "endOffsets": "5845,5941"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-firebase-messaging-17.3.4.aar\\9804b6d0b339c7c30e7f3b0d495a27f4\\res\\values-nl\\values.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-firebase-messaging-17.3.4.aar\\0d7871f1af2b4cfac1d789ac47baebcc\\res\\values-nl\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -106,20 +89,37 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\ceb63774e8f8e9ead97659fb06c6befa\\res\\values-nl\\values-nl.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-places-16.0.0.aar\\4e768dc9ff68d566c8e48c188ad6c1ea\\res\\values-nl\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,328,435,521,629,749,826,903,995,1089,1190,1284,1385,1479,1575,1670,1762,1854,1936,2047,2151,2250,2365,2478,2581,2736,2839",
-                        "endColumns": "117,104,106,85,107,119,76,76,91,93,100,93,100,93,95,94,91,91,81,110,103,98,114,112,102,154,102,81",
-                        "endOffsets": "218,323,430,516,624,744,821,898,990,1084,1185,1279,1380,1474,1570,1665,1757,1849,1931,2042,2146,2245,2360,2473,2576,2731,2834,2916"
+                        "startLines": "4,5",
+                        "startColumns": "0,0",
+                        "startOffsets": "193,299",
+                        "endColumns": "105,91",
+                        "endOffsets": "298,390"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,328,435,521,629,749,826,903,995,1089,1190,1284,1385,1479,1575,1670,1762,1854,1936,2047,2151,2250,2365,2478,2581,2736,6566",
-                        "endColumns": "117,104,106,85,107,119,76,76,91,93,100,93,100,93,95,94,91,91,81,110,103,98,114,112,102,154,102,81",
-                        "endOffsets": "218,323,430,516,624,744,821,898,990,1084,1185,1279,1380,1474,1570,1665,1757,1849,1931,2042,2146,2245,2360,2473,2576,2731,2834,6643"
+                        "startLines": "48,49",
+                        "startColumns": "4,4",
+                        "startOffsets": "5740,5850",
+                        "endColumns": "109,95",
+                        "endOffsets": "5845,5941"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-ads-17.0.0.aar\\9a74142c9eeb611e38ec4e211d95bc77\\res\\values-nl\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "197,272,392,460,526,605,716",
+                        "endColumns": "74,119,67,65,78,110,72",
+                        "endOffsets": "271,391,459,525,604,715,788"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53,54,55,56",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5946,6025,6149,6221,6291,6374,6489",
+                        "endColumns": "78,123,71,69,82,114,76",
+                        "endOffsets": "6020,6144,6216,6286,6369,6484,6561"
                     }
                 }
             ]

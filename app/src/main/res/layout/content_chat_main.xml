@@ -85,7 +85,7 @@
             app:tabTextAppearance="@style/MyCustomTextAppearance"
             app:tabTextColor="@color/bg_gray" />
 
-        <com.verbosetech.yoohoo.views.SwipeControlViewPager
+        <com.verbosetech1.yoohoo.views.SwipeControlViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="0dp"

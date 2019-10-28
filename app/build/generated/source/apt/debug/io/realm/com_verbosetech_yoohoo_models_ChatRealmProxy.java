@@ -5,8 +5,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.util.JsonReader;
 import android.util.JsonToken;
-import io.realm.ProxyUtils;
-import io.realm.exceptions.RealmMigrationNeededException;
+
 import io.realm.internal.ColumnInfo;
 import io.realm.internal.OsList;
 import io.realm.internal.OsObject;
@@ -16,13 +15,10 @@ import io.realm.internal.Property;
 import io.realm.internal.RealmObjectProxy;
 import io.realm.internal.Row;
 import io.realm.internal.Table;
-import io.realm.internal.android.JsonUtils;
-import io.realm.log.RealmLog;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -31,7 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 @SuppressWarnings("all")
-public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetech.yoohoo.models.Chat
+public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetech1.yoohoo.models.Chat
     implements RealmObjectProxy, com_verbosetech_yoohoo_models_ChatRealmProxyInterface {
 
     static final class ChatColumnInfo extends ColumnInfo {
@@ -91,8 +87,8 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
     private static final OsObjectSchemaInfo expectedObjectSchemaInfo = createExpectedObjectSchemaInfo();
 
     private ChatColumnInfo columnInfo;
-    private ProxyState<com.verbosetech.yoohoo.models.Chat> proxyState;
-    private RealmList<com.verbosetech.yoohoo.models.Message> messagesRealmList;
+    private ProxyState<com.verbosetech1.yoohoo.models.Chat> proxyState;
+    private RealmList<com.verbosetech1.yoohoo.models.Message> messagesRealmList;
 
     com_verbosetech_yoohoo_models_ChatRealmProxy() {
         proxyState.setConstructionFinished();
@@ -105,7 +101,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         }
         final BaseRealm.RealmObjectContext context = BaseRealm.objectContext.get();
         this.columnInfo = (ChatColumnInfo) context.getColumnInfo();
-        this.proxyState = new ProxyState<com.verbosetech.yoohoo.models.Chat>(this);
+        this.proxyState = new ProxyState<com.verbosetech1.yoohoo.models.Chat>(this);
         proxyState.setRealm$realm(context.getRealm());
         proxyState.setRow$realm(context.getRow());
         proxyState.setAcceptDefaultValue$realm(context.getAcceptDefaultValue());
@@ -113,20 +109,20 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
     }
 
     @Override
-    public RealmList<com.verbosetech.yoohoo.models.Message> realmGet$messages() {
+    public RealmList<com.verbosetech1.yoohoo.models.Message> realmGet$messages() {
         proxyState.getRealm$realm().checkIfValid();
         // use the cached value if available
         if (messagesRealmList != null) {
             return messagesRealmList;
         } else {
             OsList osList = proxyState.getRow$realm().getModelList(columnInfo.messagesIndex);
-            messagesRealmList = new RealmList<com.verbosetech.yoohoo.models.Message>(com.verbosetech.yoohoo.models.Message.class, osList, proxyState.getRealm$realm());
+            messagesRealmList = new RealmList<com.verbosetech1.yoohoo.models.Message>(com.verbosetech1.yoohoo.models.Message.class, osList, proxyState.getRealm$realm());
             return messagesRealmList;
         }
     }
 
     @Override
-    public void realmSet$messages(RealmList<com.verbosetech.yoohoo.models.Message> value) {
+    public void realmSet$messages(RealmList<com.verbosetech1.yoohoo.models.Message> value) {
         if (proxyState.isUnderConstruction()) {
             if (!proxyState.getAcceptDefaultValue$realm()) {
                 return;
@@ -137,9 +133,9 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
             // if the list contains unmanaged RealmObjects, convert them to managed.
             if (value != null && !value.isManaged()) {
                 final Realm realm = (Realm) proxyState.getRealm$realm();
-                final RealmList<com.verbosetech.yoohoo.models.Message> original = value;
-                value = new RealmList<com.verbosetech.yoohoo.models.Message>();
-                for (com.verbosetech.yoohoo.models.Message item : original) {
+                final RealmList<com.verbosetech1.yoohoo.models.Message> original = value;
+                value = new RealmList<com.verbosetech1.yoohoo.models.Message>();
+                for (com.verbosetech1.yoohoo.models.Message item : original) {
                     if (item == null || RealmObject.isManaged(item)) {
                         value.add(item);
                     } else {
@@ -155,7 +151,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         if (value != null && value.size() == osList.size()) {
             int objects = value.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.Message linkedObject = value.get(i);
+                com.verbosetech1.yoohoo.models.Message linkedObject = value.get(i);
                 proxyState.checkValidObject(linkedObject);
                 osList.setRow(i, ((RealmObjectProxy) linkedObject).realmGet$proxyState().getRow$realm().getIndex());
             }
@@ -166,7 +162,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
             }
             int objects = value.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.Message linkedObject = value.get(i);
+                com.verbosetech1.yoohoo.models.Message linkedObject = value.get(i);
                 proxyState.checkValidObject(linkedObject);
                 osList.addRow(((RealmObjectProxy) linkedObject).realmGet$proxyState().getRow$realm().getIndex());
             }
@@ -451,13 +447,13 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
     }
 
     @SuppressWarnings("cast")
-    public static com.verbosetech.yoohoo.models.Chat createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
+    public static com.verbosetech1.yoohoo.models.Chat createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
         final List<String> excludeFields = new ArrayList<String>(1);
         if (json.has("messages")) {
             excludeFields.add("messages");
         }
-        com.verbosetech.yoohoo.models.Chat obj = realm.createObjectInternal(com.verbosetech.yoohoo.models.Chat.class, true, excludeFields);
+        com.verbosetech1.yoohoo.models.Chat obj = realm.createObjectInternal(com.verbosetech1.yoohoo.models.Chat.class, true, excludeFields);
 
         final com_verbosetech_yoohoo_models_ChatRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_ChatRealmProxyInterface) obj;
         if (json.has("messages")) {
@@ -467,7 +463,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
                 objProxy.realmGet$messages().clear();
                 JSONArray array = json.getJSONArray("messages");
                 for (int i = 0; i < array.length(); i++) {
-                    com.verbosetech.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, array.getJSONObject(i), update);
+                    com.verbosetech1.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, array.getJSONObject(i), update);
                     objProxy.realmGet$messages().add(item);
                 }
             }
@@ -540,9 +536,9 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
 
     @SuppressWarnings("cast")
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static com.verbosetech.yoohoo.models.Chat createUsingJsonStream(Realm realm, JsonReader reader)
+    public static com.verbosetech1.yoohoo.models.Chat createUsingJsonStream(Realm realm, JsonReader reader)
         throws IOException {
-        final com.verbosetech.yoohoo.models.Chat obj = new com.verbosetech.yoohoo.models.Chat();
+        final com.verbosetech1.yoohoo.models.Chat obj = new com.verbosetech1.yoohoo.models.Chat();
         final com_verbosetech_yoohoo_models_ChatRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_ChatRealmProxyInterface) obj;
         reader.beginObject();
         while (reader.hasNext()) {
@@ -553,10 +549,10 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
                     reader.skipValue();
                     objProxy.realmSet$messages(null);
                 } else {
-                    objProxy.realmSet$messages(new RealmList<com.verbosetech.yoohoo.models.Message>());
+                    objProxy.realmSet$messages(new RealmList<com.verbosetech1.yoohoo.models.Message>());
                     reader.beginArray();
                     while (reader.hasNext()) {
-                        com.verbosetech.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createUsingJsonStream(realm, reader);
+                        com.verbosetech1.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createUsingJsonStream(realm, reader);
                         objProxy.realmGet$messages().add(item);
                     }
                     reader.endArray();
@@ -632,7 +628,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         return realm.copyToRealm(obj);
     }
 
-    public static com.verbosetech.yoohoo.models.Chat copyOrUpdate(Realm realm, com.verbosetech.yoohoo.models.Chat object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.Chat copyOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.Chat object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null) {
             final BaseRealm otherRealm = ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm();
             if (otherRealm.threadId != realm.threadId) {
@@ -645,33 +641,33 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         final BaseRealm.RealmObjectContext objectContext = BaseRealm.objectContext.get();
         RealmObjectProxy cachedRealmObject = cache.get(object);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.Chat) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.Chat) cachedRealmObject;
         }
 
         return copy(realm, object, update, cache);
     }
 
-    public static com.verbosetech.yoohoo.models.Chat copy(Realm realm, com.verbosetech.yoohoo.models.Chat newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.Chat copy(Realm realm, com.verbosetech1.yoohoo.models.Chat newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         RealmObjectProxy cachedRealmObject = cache.get(newObject);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.Chat) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.Chat) cachedRealmObject;
         }
 
         // rejecting default values to avoid creating unexpected objects from RealmModel/RealmList fields.
-        com.verbosetech.yoohoo.models.Chat realmObject = realm.createObjectInternal(com.verbosetech.yoohoo.models.Chat.class, false, Collections.<String>emptyList());
+        com.verbosetech1.yoohoo.models.Chat realmObject = realm.createObjectInternal(com.verbosetech1.yoohoo.models.Chat.class, false, Collections.<String>emptyList());
         cache.put(newObject, (RealmObjectProxy) realmObject);
 
         com_verbosetech_yoohoo_models_ChatRealmProxyInterface realmObjectSource = (com_verbosetech_yoohoo_models_ChatRealmProxyInterface) newObject;
         com_verbosetech_yoohoo_models_ChatRealmProxyInterface realmObjectCopy = (com_verbosetech_yoohoo_models_ChatRealmProxyInterface) realmObject;
 
 
-        RealmList<com.verbosetech.yoohoo.models.Message> messagesList = realmObjectSource.realmGet$messages();
+        RealmList<com.verbosetech1.yoohoo.models.Message> messagesList = realmObjectSource.realmGet$messages();
         if (messagesList != null) {
-            RealmList<com.verbosetech.yoohoo.models.Message> messagesRealmList = realmObjectCopy.realmGet$messages();
+            RealmList<com.verbosetech1.yoohoo.models.Message> messagesRealmList = realmObjectCopy.realmGet$messages();
             messagesRealmList.clear();
             for (int i = 0; i < messagesList.size(); i++) {
-                com.verbosetech.yoohoo.models.Message messagesItem = messagesList.get(i);
-                com.verbosetech.yoohoo.models.Message cachemessages = (com.verbosetech.yoohoo.models.Message) cache.get(messagesItem);
+                com.verbosetech1.yoohoo.models.Message messagesItem = messagesList.get(i);
+                com.verbosetech1.yoohoo.models.Message cachemessages = (com.verbosetech1.yoohoo.models.Message) cache.get(messagesItem);
                 if (cachemessages != null) {
                     messagesRealmList.add(cachemessages);
                 } else {
@@ -692,20 +688,20 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         return realmObject;
     }
 
-    public static long insert(Realm realm, com.verbosetech.yoohoo.models.Chat object, Map<RealmModel,Long> cache) {
+    public static long insert(Realm realm, com.verbosetech1.yoohoo.models.Chat object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Chat.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Chat.class);
         long tableNativePtr = table.getNativePtr();
-        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Chat.class);
+        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Chat.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
 
-        RealmList<com.verbosetech.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
+        RealmList<com.verbosetech1.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
         if (messagesList != null) {
             OsList messagesOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.messagesIndex);
-            for (com.verbosetech.yoohoo.models.Message messagesItem : messagesList) {
+            for (com.verbosetech1.yoohoo.models.Message messagesItem : messagesList) {
                 Long cacheItemIndexmessages = cache.get(messagesItem);
                 if (cacheItemIndexmessages == null) {
                     cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insert(realm, messagesItem, cache);
@@ -744,12 +740,12 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
     }
 
     public static void insert(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Chat.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Chat.class);
         long tableNativePtr = table.getNativePtr();
-        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Chat.class);
-        com.verbosetech.yoohoo.models.Chat object = null;
+        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Chat.class);
+        com.verbosetech1.yoohoo.models.Chat object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.Chat) objects.next();
+            object = (com.verbosetech1.yoohoo.models.Chat) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -760,10 +756,10 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
             long rowIndex = OsObject.createRow(table);
             cache.put(object, rowIndex);
 
-            RealmList<com.verbosetech.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
+            RealmList<com.verbosetech1.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
             if (messagesList != null) {
                 OsList messagesOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.messagesIndex);
-                for (com.verbosetech.yoohoo.models.Message messagesItem : messagesList) {
+                for (com.verbosetech1.yoohoo.models.Message messagesItem : messagesList) {
                     Long cacheItemIndexmessages = cache.get(messagesItem);
                     if (cacheItemIndexmessages == null) {
                         cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insert(realm, messagesItem, cache);
@@ -801,23 +797,23 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         }
     }
 
-    public static long insertOrUpdate(Realm realm, com.verbosetech.yoohoo.models.Chat object, Map<RealmModel,Long> cache) {
+    public static long insertOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.Chat object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Chat.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Chat.class);
         long tableNativePtr = table.getNativePtr();
-        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Chat.class);
+        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Chat.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
 
         OsList messagesOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.messagesIndex);
-        RealmList<com.verbosetech.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
+        RealmList<com.verbosetech1.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
         if (messagesList != null && messagesList.size() == messagesOsList.size()) {
             // For lists of equal lengths, we need to set each element directly as clearing the receiver list can be wrong if the input and target list are the same.
             int objects = messagesList.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.Message messagesItem = messagesList.get(i);
+                com.verbosetech1.yoohoo.models.Message messagesItem = messagesList.get(i);
                 Long cacheItemIndexmessages = cache.get(messagesItem);
                 if (cacheItemIndexmessages == null) {
                     cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, messagesItem, cache);
@@ -827,7 +823,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         } else {
             messagesOsList.removeAll();
             if (messagesList != null) {
-                for (com.verbosetech.yoohoo.models.Message messagesItem : messagesList) {
+                for (com.verbosetech1.yoohoo.models.Message messagesItem : messagesList) {
                     Long cacheItemIndexmessages = cache.get(messagesItem);
                     if (cacheItemIndexmessages == null) {
                         cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, messagesItem, cache);
@@ -880,12 +876,12 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
     }
 
     public static void insertOrUpdate(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Chat.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Chat.class);
         long tableNativePtr = table.getNativePtr();
-        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Chat.class);
-        com.verbosetech.yoohoo.models.Chat object = null;
+        ChatColumnInfo columnInfo = (ChatColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Chat.class);
+        com.verbosetech1.yoohoo.models.Chat object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.Chat) objects.next();
+            object = (com.verbosetech1.yoohoo.models.Chat) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -897,12 +893,12 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
             cache.put(object, rowIndex);
 
             OsList messagesOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.messagesIndex);
-            RealmList<com.verbosetech.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
+            RealmList<com.verbosetech1.yoohoo.models.Message> messagesList = ((com_verbosetech_yoohoo_models_ChatRealmProxyInterface) object).realmGet$messages();
             if (messagesList != null && messagesList.size() == messagesOsList.size()) {
                 // For lists of equal lengths, we need to set each element directly as clearing the receiver list can be wrong if the input and target list are the same.
                 int objectCount = messagesList.size();
                 for (int i = 0; i < objectCount; i++) {
-                    com.verbosetech.yoohoo.models.Message messagesItem = messagesList.get(i);
+                    com.verbosetech1.yoohoo.models.Message messagesItem = messagesList.get(i);
                     Long cacheItemIndexmessages = cache.get(messagesItem);
                     if (cacheItemIndexmessages == null) {
                         cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, messagesItem, cache);
@@ -912,7 +908,7 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
             } else {
                 messagesOsList.removeAll();
                 if (messagesList != null) {
-                    for (com.verbosetech.yoohoo.models.Message messagesItem : messagesList) {
+                    for (com.verbosetech1.yoohoo.models.Message messagesItem : messagesList) {
                         Long cacheItemIndexmessages = cache.get(messagesItem);
                         if (cacheItemIndexmessages == null) {
                             cacheItemIndexmessages = com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, messagesItem, cache);
@@ -964,21 +960,21 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         }
     }
 
-    public static com.verbosetech.yoohoo.models.Chat createDetachedCopy(com.verbosetech.yoohoo.models.Chat realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
+    public static com.verbosetech1.yoohoo.models.Chat createDetachedCopy(com.verbosetech1.yoohoo.models.Chat realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
         if (currentDepth > maxDepth || realmObject == null) {
             return null;
         }
         CacheData<RealmModel> cachedObject = cache.get(realmObject);
-        com.verbosetech.yoohoo.models.Chat unmanagedObject;
+        com.verbosetech1.yoohoo.models.Chat unmanagedObject;
         if (cachedObject == null) {
-            unmanagedObject = new com.verbosetech.yoohoo.models.Chat();
+            unmanagedObject = new com.verbosetech1.yoohoo.models.Chat();
             cache.put(realmObject, new RealmObjectProxy.CacheData<RealmModel>(currentDepth, unmanagedObject));
         } else {
             // Reuse cached object or recreate it because it was encountered at a lower depth.
             if (currentDepth >= cachedObject.minDepth) {
-                return (com.verbosetech.yoohoo.models.Chat) cachedObject.object;
+                return (com.verbosetech1.yoohoo.models.Chat) cachedObject.object;
             }
-            unmanagedObject = (com.verbosetech.yoohoo.models.Chat) cachedObject.object;
+            unmanagedObject = (com.verbosetech1.yoohoo.models.Chat) cachedObject.object;
             cachedObject.minDepth = currentDepth;
         }
         com_verbosetech_yoohoo_models_ChatRealmProxyInterface unmanagedCopy = (com_verbosetech_yoohoo_models_ChatRealmProxyInterface) unmanagedObject;
@@ -988,13 +984,13 @@ public class com_verbosetech_yoohoo_models_ChatRealmProxy extends com.verbosetec
         if (currentDepth == maxDepth) {
             unmanagedCopy.realmSet$messages(null);
         } else {
-            RealmList<com.verbosetech.yoohoo.models.Message> managedmessagesList = realmSource.realmGet$messages();
-            RealmList<com.verbosetech.yoohoo.models.Message> unmanagedmessagesList = new RealmList<com.verbosetech.yoohoo.models.Message>();
+            RealmList<com.verbosetech1.yoohoo.models.Message> managedmessagesList = realmSource.realmGet$messages();
+            RealmList<com.verbosetech1.yoohoo.models.Message> unmanagedmessagesList = new RealmList<com.verbosetech1.yoohoo.models.Message>();
             unmanagedCopy.realmSet$messages(unmanagedmessagesList);
             int nextDepth = currentDepth + 1;
             int size = managedmessagesList.size();
             for (int i = 0; i < size; i++) {
-                com.verbosetech.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createDetachedCopy(managedmessagesList.get(i), nextDepth, maxDepth, cache);
+                com.verbosetech1.yoohoo.models.Message item = com_verbosetech_yoohoo_models_MessageRealmProxy.createDetachedCopy(managedmessagesList.get(i), nextDepth, maxDepth, cache);
                 unmanagedmessagesList.add(item);
             }
         }

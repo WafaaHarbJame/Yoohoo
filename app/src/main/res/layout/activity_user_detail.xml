@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.verbosetech.yoohoo.activities.ChatDetailActivity">
+    tools:context="com.verbosetech1.yoohoo.activities.ChatDetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.verbosetech.yoohoo.models.MyImageView
+                <com.verbosetech1.yoohoo.models.MyImageView
                     android:id="@+id/expandedImage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

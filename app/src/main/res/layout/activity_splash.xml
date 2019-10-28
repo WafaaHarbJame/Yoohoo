@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.verbosetech.yoohoo.activities.SplashActivity">
+    tools:context="com.verbosetech1.yoohoo.activities.SplashActivity">
 
     <ImageView
         android:layout_width="98dp"

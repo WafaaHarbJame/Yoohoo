@@ -22,8 +22,8 @@ public interface com_verbosetech_yoohoo_models_MessageRealmProxyInterface {
     public void realmSet$recipientId(String value);
     public String realmGet$senderId();
     public void realmSet$senderId(String value);
-    public RealmList<com.verbosetech.yoohoo.models.MyString> realmGet$recipientGroupIds();
-    public void realmSet$recipientGroupIds(RealmList<com.verbosetech.yoohoo.models.MyString> value);
+    public RealmList<com.verbosetech1.yoohoo.models.MyString> realmGet$recipientGroupIds();
+    public void realmSet$recipientGroupIds(RealmList<com.verbosetech1.yoohoo.models.MyString> value);
     public long realmGet$date();
     public void realmSet$date(long value);
     public boolean realmGet$delivered();
@@ -32,6 +32,6 @@ public interface com_verbosetech_yoohoo_models_MessageRealmProxyInterface {
     public void realmSet$sent(boolean value);
     public int realmGet$attachmentType();
     public void realmSet$attachmentType(int value);
-    public com.verbosetech.yoohoo.models.Attachment realmGet$attachment();
-    public void realmSet$attachment(com.verbosetech.yoohoo.models.Attachment value);
+    public com.verbosetech1.yoohoo.models.Attachment realmGet$attachment();
+    public void realmSet$attachment(com.verbosetech1.yoohoo.models.Attachment value);
 }

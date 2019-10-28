@@ -5,10 +5,8 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.util.JsonReader;
 import android.util.JsonToken;
-import io.realm.ProxyUtils;
-import io.realm.exceptions.RealmMigrationNeededException;
+
 import io.realm.internal.ColumnInfo;
-import io.realm.internal.OsList;
 import io.realm.internal.OsObject;
 import io.realm.internal.OsObjectSchemaInfo;
 import io.realm.internal.OsSchemaInfo;
@@ -16,22 +14,18 @@ import io.realm.internal.Property;
 import io.realm.internal.RealmObjectProxy;
 import io.realm.internal.Row;
 import io.realm.internal.Table;
-import io.realm.internal.android.JsonUtils;
-import io.realm.log.RealmLog;
+
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.json.JSONArray;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 @SuppressWarnings("all")
-public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbosetech.yoohoo.models.MyString
+public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbosetech1.yoohoo.models.MyString
     implements RealmObjectProxy, com_verbosetech_yoohoo_models_MyStringRealmProxyInterface {
 
     static final class MyStringColumnInfo extends ColumnInfo {
@@ -64,7 +58,7 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
     private static final OsObjectSchemaInfo expectedObjectSchemaInfo = createExpectedObjectSchemaInfo();
 
     private MyStringColumnInfo columnInfo;
-    private ProxyState<com.verbosetech.yoohoo.models.MyString> proxyState;
+    private ProxyState<com.verbosetech1.yoohoo.models.MyString> proxyState;
 
     com_verbosetech_yoohoo_models_MyStringRealmProxy() {
         proxyState.setConstructionFinished();
@@ -77,7 +71,7 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         }
         final BaseRealm.RealmObjectContext context = BaseRealm.objectContext.get();
         this.columnInfo = (MyStringColumnInfo) context.getColumnInfo();
-        this.proxyState = new ProxyState<com.verbosetech.yoohoo.models.MyString>(this);
+        this.proxyState = new ProxyState<com.verbosetech1.yoohoo.models.MyString>(this);
         proxyState.setRealm$realm(context.getRealm());
         proxyState.setRow$realm(context.getRow());
         proxyState.setAcceptDefaultValue$realm(context.getAcceptDefaultValue());
@@ -137,10 +131,10 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
     }
 
     @SuppressWarnings("cast")
-    public static com.verbosetech.yoohoo.models.MyString createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
+    public static com.verbosetech1.yoohoo.models.MyString createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
         final List<String> excludeFields = Collections.<String> emptyList();
-        com.verbosetech.yoohoo.models.MyString obj = realm.createObjectInternal(com.verbosetech.yoohoo.models.MyString.class, true, excludeFields);
+        com.verbosetech1.yoohoo.models.MyString obj = realm.createObjectInternal(com.verbosetech1.yoohoo.models.MyString.class, true, excludeFields);
 
         final com_verbosetech_yoohoo_models_MyStringRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) obj;
         if (json.has("string")) {
@@ -155,9 +149,9 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
 
     @SuppressWarnings("cast")
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static com.verbosetech.yoohoo.models.MyString createUsingJsonStream(Realm realm, JsonReader reader)
+    public static com.verbosetech1.yoohoo.models.MyString createUsingJsonStream(Realm realm, JsonReader reader)
         throws IOException {
-        final com.verbosetech.yoohoo.models.MyString obj = new com.verbosetech.yoohoo.models.MyString();
+        final com.verbosetech1.yoohoo.models.MyString obj = new com.verbosetech1.yoohoo.models.MyString();
         final com_verbosetech_yoohoo_models_MyStringRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) obj;
         reader.beginObject();
         while (reader.hasNext()) {
@@ -178,7 +172,7 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         return realm.copyToRealm(obj);
     }
 
-    public static com.verbosetech.yoohoo.models.MyString copyOrUpdate(Realm realm, com.verbosetech.yoohoo.models.MyString object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.MyString copyOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.MyString object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null) {
             final BaseRealm otherRealm = ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm();
             if (otherRealm.threadId != realm.threadId) {
@@ -191,20 +185,20 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         final BaseRealm.RealmObjectContext objectContext = BaseRealm.objectContext.get();
         RealmObjectProxy cachedRealmObject = cache.get(object);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.MyString) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.MyString) cachedRealmObject;
         }
 
         return copy(realm, object, update, cache);
     }
 
-    public static com.verbosetech.yoohoo.models.MyString copy(Realm realm, com.verbosetech.yoohoo.models.MyString newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.MyString copy(Realm realm, com.verbosetech1.yoohoo.models.MyString newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         RealmObjectProxy cachedRealmObject = cache.get(newObject);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.MyString) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.MyString) cachedRealmObject;
         }
 
         // rejecting default values to avoid creating unexpected objects from RealmModel/RealmList fields.
-        com.verbosetech.yoohoo.models.MyString realmObject = realm.createObjectInternal(com.verbosetech.yoohoo.models.MyString.class, false, Collections.<String>emptyList());
+        com.verbosetech1.yoohoo.models.MyString realmObject = realm.createObjectInternal(com.verbosetech1.yoohoo.models.MyString.class, false, Collections.<String>emptyList());
         cache.put(newObject, (RealmObjectProxy) realmObject);
 
         com_verbosetech_yoohoo_models_MyStringRealmProxyInterface realmObjectSource = (com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) newObject;
@@ -214,13 +208,13 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         return realmObject;
     }
 
-    public static long insert(Realm realm, com.verbosetech.yoohoo.models.MyString object, Map<RealmModel,Long> cache) {
+    public static long insert(Realm realm, com.verbosetech1.yoohoo.models.MyString object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.MyString.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.MyString.class);
         long tableNativePtr = table.getNativePtr();
-        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.MyString.class);
+        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.MyString.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
         String realmGet$string = ((com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) object).realmGet$string();
@@ -231,12 +225,12 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
     }
 
     public static void insert(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.MyString.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.MyString.class);
         long tableNativePtr = table.getNativePtr();
-        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.MyString.class);
-        com.verbosetech.yoohoo.models.MyString object = null;
+        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.MyString.class);
+        com.verbosetech1.yoohoo.models.MyString object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.MyString) objects.next();
+            object = (com.verbosetech1.yoohoo.models.MyString) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -253,13 +247,13 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         }
     }
 
-    public static long insertOrUpdate(Realm realm, com.verbosetech.yoohoo.models.MyString object, Map<RealmModel,Long> cache) {
+    public static long insertOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.MyString object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.MyString.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.MyString.class);
         long tableNativePtr = table.getNativePtr();
-        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.MyString.class);
+        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.MyString.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
         String realmGet$string = ((com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) object).realmGet$string();
@@ -272,12 +266,12 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
     }
 
     public static void insertOrUpdate(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.MyString.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.MyString.class);
         long tableNativePtr = table.getNativePtr();
-        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.MyString.class);
-        com.verbosetech.yoohoo.models.MyString object = null;
+        MyStringColumnInfo columnInfo = (MyStringColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.MyString.class);
+        com.verbosetech1.yoohoo.models.MyString object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.MyString) objects.next();
+            object = (com.verbosetech1.yoohoo.models.MyString) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -296,21 +290,21 @@ public class com_verbosetech_yoohoo_models_MyStringRealmProxy extends com.verbos
         }
     }
 
-    public static com.verbosetech.yoohoo.models.MyString createDetachedCopy(com.verbosetech.yoohoo.models.MyString realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
+    public static com.verbosetech1.yoohoo.models.MyString createDetachedCopy(com.verbosetech1.yoohoo.models.MyString realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
         if (currentDepth > maxDepth || realmObject == null) {
             return null;
         }
         CacheData<RealmModel> cachedObject = cache.get(realmObject);
-        com.verbosetech.yoohoo.models.MyString unmanagedObject;
+        com.verbosetech1.yoohoo.models.MyString unmanagedObject;
         if (cachedObject == null) {
-            unmanagedObject = new com.verbosetech.yoohoo.models.MyString();
+            unmanagedObject = new com.verbosetech1.yoohoo.models.MyString();
             cache.put(realmObject, new RealmObjectProxy.CacheData<RealmModel>(currentDepth, unmanagedObject));
         } else {
             // Reuse cached object or recreate it because it was encountered at a lower depth.
             if (currentDepth >= cachedObject.minDepth) {
-                return (com.verbosetech.yoohoo.models.MyString) cachedObject.object;
+                return (com.verbosetech1.yoohoo.models.MyString) cachedObject.object;
             }
-            unmanagedObject = (com.verbosetech.yoohoo.models.MyString) cachedObject.object;
+            unmanagedObject = (com.verbosetech1.yoohoo.models.MyString) cachedObject.object;
             cachedObject.minDepth = currentDepth;
         }
         com_verbosetech_yoohoo_models_MyStringRealmProxyInterface unmanagedCopy = (com_verbosetech_yoohoo_models_MyStringRealmProxyInterface) unmanagedObject;

@@ -4,7 +4,7 @@
             "outputFile": "D:\\tamasj\\Yoohoo Source Code\\Yoohoo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\8c0ef6de19ebd64b02af03dbeb21af3a\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\4397b18da0a0ab72e23892f68f3b0692\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\ceb63774e8f8e9ead97659fb06c6befa\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\eng wafaa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\bb16c4ac90b72cf07b612f4719d17f0b\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

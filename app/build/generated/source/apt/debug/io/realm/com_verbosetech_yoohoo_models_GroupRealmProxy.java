@@ -5,8 +5,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.util.JsonReader;
 import android.util.JsonToken;
-import io.realm.ProxyUtils;
-import io.realm.exceptions.RealmMigrationNeededException;
+
 import io.realm.internal.ColumnInfo;
 import io.realm.internal.OsList;
 import io.realm.internal.OsObject;
@@ -16,13 +15,10 @@ import io.realm.internal.Property;
 import io.realm.internal.RealmObjectProxy;
 import io.realm.internal.Row;
 import io.realm.internal.Table;
-import io.realm.internal.android.JsonUtils;
-import io.realm.log.RealmLog;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -31,7 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 @SuppressWarnings("all")
-public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosetech.yoohoo.models.Group
+public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosetech1.yoohoo.models.Group
     implements RealmObjectProxy, com_verbosetech_yoohoo_models_GroupRealmProxyInterface {
 
     static final class GroupColumnInfo extends ColumnInfo {
@@ -76,8 +72,8 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
     private static final OsObjectSchemaInfo expectedObjectSchemaInfo = createExpectedObjectSchemaInfo();
 
     private GroupColumnInfo columnInfo;
-    private ProxyState<com.verbosetech.yoohoo.models.Group> proxyState;
-    private RealmList<com.verbosetech.yoohoo.models.MyString> userIdsRealmList;
+    private ProxyState<com.verbosetech1.yoohoo.models.Group> proxyState;
+    private RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsRealmList;
 
     com_verbosetech_yoohoo_models_GroupRealmProxy() {
         proxyState.setConstructionFinished();
@@ -90,7 +86,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         }
         final BaseRealm.RealmObjectContext context = BaseRealm.objectContext.get();
         this.columnInfo = (GroupColumnInfo) context.getColumnInfo();
-        this.proxyState = new ProxyState<com.verbosetech.yoohoo.models.Group>(this);
+        this.proxyState = new ProxyState<com.verbosetech1.yoohoo.models.Group>(this);
         proxyState.setRealm$realm(context.getRealm());
         proxyState.setRow$realm(context.getRow());
         proxyState.setAcceptDefaultValue$realm(context.getAcceptDefaultValue());
@@ -206,20 +202,20 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
     }
 
     @Override
-    public RealmList<com.verbosetech.yoohoo.models.MyString> realmGet$userIds() {
+    public RealmList<com.verbosetech1.yoohoo.models.MyString> realmGet$userIds() {
         proxyState.getRealm$realm().checkIfValid();
         // use the cached value if available
         if (userIdsRealmList != null) {
             return userIdsRealmList;
         } else {
             OsList osList = proxyState.getRow$realm().getModelList(columnInfo.userIdsIndex);
-            userIdsRealmList = new RealmList<com.verbosetech.yoohoo.models.MyString>(com.verbosetech.yoohoo.models.MyString.class, osList, proxyState.getRealm$realm());
+            userIdsRealmList = new RealmList<com.verbosetech1.yoohoo.models.MyString>(com.verbosetech1.yoohoo.models.MyString.class, osList, proxyState.getRealm$realm());
             return userIdsRealmList;
         }
     }
 
     @Override
-    public void realmSet$userIds(RealmList<com.verbosetech.yoohoo.models.MyString> value) {
+    public void realmSet$userIds(RealmList<com.verbosetech1.yoohoo.models.MyString> value) {
         if (proxyState.isUnderConstruction()) {
             if (!proxyState.getAcceptDefaultValue$realm()) {
                 return;
@@ -230,9 +226,9 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             // if the list contains unmanaged RealmObjects, convert them to managed.
             if (value != null && !value.isManaged()) {
                 final Realm realm = (Realm) proxyState.getRealm$realm();
-                final RealmList<com.verbosetech.yoohoo.models.MyString> original = value;
-                value = new RealmList<com.verbosetech.yoohoo.models.MyString>();
-                for (com.verbosetech.yoohoo.models.MyString item : original) {
+                final RealmList<com.verbosetech1.yoohoo.models.MyString> original = value;
+                value = new RealmList<com.verbosetech1.yoohoo.models.MyString>();
+                for (com.verbosetech1.yoohoo.models.MyString item : original) {
                     if (item == null || RealmObject.isManaged(item)) {
                         value.add(item);
                     } else {
@@ -248,7 +244,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         if (value != null && value.size() == osList.size()) {
             int objects = value.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.MyString linkedObject = value.get(i);
+                com.verbosetech1.yoohoo.models.MyString linkedObject = value.get(i);
                 proxyState.checkValidObject(linkedObject);
                 osList.setRow(i, ((RealmObjectProxy) linkedObject).realmGet$proxyState().getRow$realm().getIndex());
             }
@@ -259,7 +255,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             }
             int objects = value.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.MyString linkedObject = value.get(i);
+                com.verbosetech1.yoohoo.models.MyString linkedObject = value.get(i);
                 proxyState.checkValidObject(linkedObject);
                 osList.addRow(((RealmObjectProxy) linkedObject).realmGet$proxyState().getRow$realm().getIndex());
             }
@@ -293,13 +289,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
     }
 
     @SuppressWarnings("cast")
-    public static com.verbosetech.yoohoo.models.Group createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
+    public static com.verbosetech1.yoohoo.models.Group createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
         final List<String> excludeFields = new ArrayList<String>(1);
-        com.verbosetech.yoohoo.models.Group obj = null;
+        com.verbosetech1.yoohoo.models.Group obj = null;
         if (update) {
-            Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
-            GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+            Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
+            GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
             long pkColumnIndex = columnInfo.idIndex;
             long rowIndex = Table.NO_MATCH;
             if (json.isNull("id")) {
@@ -310,7 +306,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             if (rowIndex != Table.NO_MATCH) {
                 final BaseRealm.RealmObjectContext objectContext = BaseRealm.objectContext.get();
                 try {
-                    objectContext.set(realm, table.getUncheckedRow(rowIndex), realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class), false, Collections.<String> emptyList());
+                    objectContext.set(realm, table.getUncheckedRow(rowIndex), realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class), false, Collections.<String> emptyList());
                     obj = new io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy();
                 } finally {
                     objectContext.clear();
@@ -323,9 +319,9 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             }
             if (json.has("id")) {
                 if (json.isNull("id")) {
-                    obj = (io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy) realm.createObjectInternal(com.verbosetech.yoohoo.models.Group.class, null, true, excludeFields);
+                    obj = (io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy) realm.createObjectInternal(com.verbosetech1.yoohoo.models.Group.class, null, true, excludeFields);
                 } else {
-                    obj = (io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy) realm.createObjectInternal(com.verbosetech.yoohoo.models.Group.class, json.getString("id"), true, excludeFields);
+                    obj = (io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy) realm.createObjectInternal(com.verbosetech1.yoohoo.models.Group.class, json.getString("id"), true, excludeFields);
                 }
             } else {
                 throw new IllegalArgumentException("JSON object doesn't have the primary key field 'id'.");
@@ -361,7 +357,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
                 objProxy.realmGet$userIds().clear();
                 JSONArray array = json.getJSONArray("userIds");
                 for (int i = 0; i < array.length(); i++) {
-                    com.verbosetech.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, array.getJSONObject(i), update);
+                    com.verbosetech1.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, array.getJSONObject(i), update);
                     objProxy.realmGet$userIds().add(item);
                 }
             }
@@ -371,10 +367,10 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
 
     @SuppressWarnings("cast")
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static com.verbosetech.yoohoo.models.Group createUsingJsonStream(Realm realm, JsonReader reader)
+    public static com.verbosetech1.yoohoo.models.Group createUsingJsonStream(Realm realm, JsonReader reader)
         throws IOException {
         boolean jsonHasPrimaryKey = false;
-        final com.verbosetech.yoohoo.models.Group obj = new com.verbosetech.yoohoo.models.Group();
+        final com.verbosetech1.yoohoo.models.Group obj = new com.verbosetech1.yoohoo.models.Group();
         final com_verbosetech_yoohoo_models_GroupRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_GroupRealmProxyInterface) obj;
         reader.beginObject();
         while (reader.hasNext()) {
@@ -414,10 +410,10 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
                     reader.skipValue();
                     objProxy.realmSet$userIds(null);
                 } else {
-                    objProxy.realmSet$userIds(new RealmList<com.verbosetech.yoohoo.models.MyString>());
+                    objProxy.realmSet$userIds(new RealmList<com.verbosetech1.yoohoo.models.MyString>());
                     reader.beginArray();
                     while (reader.hasNext()) {
-                        com.verbosetech.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createUsingJsonStream(realm, reader);
+                        com.verbosetech1.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createUsingJsonStream(realm, reader);
                         objProxy.realmGet$userIds().add(item);
                     }
                     reader.endArray();
@@ -433,7 +429,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         return realm.copyToRealm(obj);
     }
 
-    public static com.verbosetech.yoohoo.models.Group copyOrUpdate(Realm realm, com.verbosetech.yoohoo.models.Group object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.Group copyOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.Group object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null) {
             final BaseRealm otherRealm = ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm();
             if (otherRealm.threadId != realm.threadId) {
@@ -446,14 +442,14 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         final BaseRealm.RealmObjectContext objectContext = BaseRealm.objectContext.get();
         RealmObjectProxy cachedRealmObject = cache.get(object);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.Group) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.Group) cachedRealmObject;
         }
 
-        com.verbosetech.yoohoo.models.Group realmObject = null;
+        com.verbosetech1.yoohoo.models.Group realmObject = null;
         boolean canUpdate = update;
         if (canUpdate) {
-            Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
-            GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+            Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
+            GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
             long pkColumnIndex = columnInfo.idIndex;
             String value = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$id();
             long rowIndex = Table.NO_MATCH;
@@ -466,7 +462,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
                 canUpdate = false;
             } else {
                 try {
-                    objectContext.set(realm, table.getUncheckedRow(rowIndex), realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class), false, Collections.<String> emptyList());
+                    objectContext.set(realm, table.getUncheckedRow(rowIndex), realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class), false, Collections.<String> emptyList());
                     realmObject = new io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy();
                     cache.put(object, (RealmObjectProxy) realmObject);
                 } finally {
@@ -478,14 +474,14 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         return (canUpdate) ? update(realm, realmObject, object, cache) : copy(realm, object, update, cache);
     }
 
-    public static com.verbosetech.yoohoo.models.Group copy(Realm realm, com.verbosetech.yoohoo.models.Group newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.Group copy(Realm realm, com.verbosetech1.yoohoo.models.Group newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         RealmObjectProxy cachedRealmObject = cache.get(newObject);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.Group) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.Group) cachedRealmObject;
         }
 
         // rejecting default values to avoid creating unexpected objects from RealmModel/RealmList fields.
-        com.verbosetech.yoohoo.models.Group realmObject = realm.createObjectInternal(com.verbosetech.yoohoo.models.Group.class, ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) newObject).realmGet$id(), false, Collections.<String>emptyList());
+        com.verbosetech1.yoohoo.models.Group realmObject = realm.createObjectInternal(com.verbosetech1.yoohoo.models.Group.class, ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) newObject).realmGet$id(), false, Collections.<String>emptyList());
         cache.put(newObject, (RealmObjectProxy) realmObject);
 
         com_verbosetech_yoohoo_models_GroupRealmProxyInterface realmObjectSource = (com_verbosetech_yoohoo_models_GroupRealmProxyInterface) newObject;
@@ -495,13 +491,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         realmObjectCopy.realmSet$status(realmObjectSource.realmGet$status());
         realmObjectCopy.realmSet$image(realmObjectSource.realmGet$image());
 
-        RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = realmObjectSource.realmGet$userIds();
+        RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = realmObjectSource.realmGet$userIds();
         if (userIdsList != null) {
-            RealmList<com.verbosetech.yoohoo.models.MyString> userIdsRealmList = realmObjectCopy.realmGet$userIds();
+            RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsRealmList = realmObjectCopy.realmGet$userIds();
             userIdsRealmList.clear();
             for (int i = 0; i < userIdsList.size(); i++) {
-                com.verbosetech.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
-                com.verbosetech.yoohoo.models.MyString cacheuserIds = (com.verbosetech.yoohoo.models.MyString) cache.get(userIdsItem);
+                com.verbosetech1.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
+                com.verbosetech1.yoohoo.models.MyString cacheuserIds = (com.verbosetech1.yoohoo.models.MyString) cache.get(userIdsItem);
                 if (cacheuserIds != null) {
                     userIdsRealmList.add(cacheuserIds);
                 } else {
@@ -513,13 +509,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         return realmObject;
     }
 
-    public static long insert(Realm realm, com.verbosetech.yoohoo.models.Group object, Map<RealmModel,Long> cache) {
+    public static long insert(Realm realm, com.verbosetech1.yoohoo.models.Group object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
         long tableNativePtr = table.getNativePtr();
-        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
         long pkColumnIndex = columnInfo.idIndex;
         String primaryKeyValue = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$id();
         long rowIndex = Table.NO_MATCH;
@@ -547,10 +543,10 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             Table.nativeSetString(tableNativePtr, columnInfo.imageIndex, rowIndex, realmGet$image, false);
         }
 
-        RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
+        RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
         if (userIdsList != null) {
             OsList userIdsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.userIdsIndex);
-            for (com.verbosetech.yoohoo.models.MyString userIdsItem : userIdsList) {
+            for (com.verbosetech1.yoohoo.models.MyString userIdsItem : userIdsList) {
                 Long cacheItemIndexuserIds = cache.get(userIdsItem);
                 if (cacheItemIndexuserIds == null) {
                     cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insert(realm, userIdsItem, cache);
@@ -562,13 +558,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
     }
 
     public static void insert(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
         long tableNativePtr = table.getNativePtr();
-        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
         long pkColumnIndex = columnInfo.idIndex;
-        com.verbosetech.yoohoo.models.Group object = null;
+        com.verbosetech1.yoohoo.models.Group object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.Group) objects.next();
+            object = (com.verbosetech1.yoohoo.models.Group) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -602,10 +598,10 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
                 Table.nativeSetString(tableNativePtr, columnInfo.imageIndex, rowIndex, realmGet$image, false);
             }
 
-            RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
+            RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
             if (userIdsList != null) {
                 OsList userIdsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.userIdsIndex);
-                for (com.verbosetech.yoohoo.models.MyString userIdsItem : userIdsList) {
+                for (com.verbosetech1.yoohoo.models.MyString userIdsItem : userIdsList) {
                     Long cacheItemIndexuserIds = cache.get(userIdsItem);
                     if (cacheItemIndexuserIds == null) {
                         cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insert(realm, userIdsItem, cache);
@@ -616,13 +612,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         }
     }
 
-    public static long insertOrUpdate(Realm realm, com.verbosetech.yoohoo.models.Group object, Map<RealmModel,Long> cache) {
+    public static long insertOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.Group object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
         long tableNativePtr = table.getNativePtr();
-        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
         long pkColumnIndex = columnInfo.idIndex;
         String primaryKeyValue = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$id();
         long rowIndex = Table.NO_MATCH;
@@ -655,12 +651,12 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         }
 
         OsList userIdsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.userIdsIndex);
-        RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
+        RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
         if (userIdsList != null && userIdsList.size() == userIdsOsList.size()) {
             // For lists of equal lengths, we need to set each element directly as clearing the receiver list can be wrong if the input and target list are the same.
             int objects = userIdsList.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
+                com.verbosetech1.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
                 Long cacheItemIndexuserIds = cache.get(userIdsItem);
                 if (cacheItemIndexuserIds == null) {
                     cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, userIdsItem, cache);
@@ -670,7 +666,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         } else {
             userIdsOsList.removeAll();
             if (userIdsList != null) {
-                for (com.verbosetech.yoohoo.models.MyString userIdsItem : userIdsList) {
+                for (com.verbosetech1.yoohoo.models.MyString userIdsItem : userIdsList) {
                     Long cacheItemIndexuserIds = cache.get(userIdsItem);
                     if (cacheItemIndexuserIds == null) {
                         cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, userIdsItem, cache);
@@ -684,13 +680,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
     }
 
     public static void insertOrUpdate(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.Group.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.Group.class);
         long tableNativePtr = table.getNativePtr();
-        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.Group.class);
+        GroupColumnInfo columnInfo = (GroupColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.Group.class);
         long pkColumnIndex = columnInfo.idIndex;
-        com.verbosetech.yoohoo.models.Group object = null;
+        com.verbosetech1.yoohoo.models.Group object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.Group) objects.next();
+            object = (com.verbosetech1.yoohoo.models.Group) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -729,12 +725,12 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             }
 
             OsList userIdsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.userIdsIndex);
-            RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
+            RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = ((com_verbosetech_yoohoo_models_GroupRealmProxyInterface) object).realmGet$userIds();
             if (userIdsList != null && userIdsList.size() == userIdsOsList.size()) {
                 // For lists of equal lengths, we need to set each element directly as clearing the receiver list can be wrong if the input and target list are the same.
                 int objectCount = userIdsList.size();
                 for (int i = 0; i < objectCount; i++) {
-                    com.verbosetech.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
+                    com.verbosetech1.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
                     Long cacheItemIndexuserIds = cache.get(userIdsItem);
                     if (cacheItemIndexuserIds == null) {
                         cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, userIdsItem, cache);
@@ -744,7 +740,7 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             } else {
                 userIdsOsList.removeAll();
                 if (userIdsList != null) {
-                    for (com.verbosetech.yoohoo.models.MyString userIdsItem : userIdsList) {
+                    for (com.verbosetech1.yoohoo.models.MyString userIdsItem : userIdsList) {
                         Long cacheItemIndexuserIds = cache.get(userIdsItem);
                         if (cacheItemIndexuserIds == null) {
                             cacheItemIndexuserIds = com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, userIdsItem, cache);
@@ -757,21 +753,21 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         }
     }
 
-    public static com.verbosetech.yoohoo.models.Group createDetachedCopy(com.verbosetech.yoohoo.models.Group realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
+    public static com.verbosetech1.yoohoo.models.Group createDetachedCopy(com.verbosetech1.yoohoo.models.Group realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
         if (currentDepth > maxDepth || realmObject == null) {
             return null;
         }
         CacheData<RealmModel> cachedObject = cache.get(realmObject);
-        com.verbosetech.yoohoo.models.Group unmanagedObject;
+        com.verbosetech1.yoohoo.models.Group unmanagedObject;
         if (cachedObject == null) {
-            unmanagedObject = new com.verbosetech.yoohoo.models.Group();
+            unmanagedObject = new com.verbosetech1.yoohoo.models.Group();
             cache.put(realmObject, new RealmObjectProxy.CacheData<RealmModel>(currentDepth, unmanagedObject));
         } else {
             // Reuse cached object or recreate it because it was encountered at a lower depth.
             if (currentDepth >= cachedObject.minDepth) {
-                return (com.verbosetech.yoohoo.models.Group) cachedObject.object;
+                return (com.verbosetech1.yoohoo.models.Group) cachedObject.object;
             }
-            unmanagedObject = (com.verbosetech.yoohoo.models.Group) cachedObject.object;
+            unmanagedObject = (com.verbosetech1.yoohoo.models.Group) cachedObject.object;
             cachedObject.minDepth = currentDepth;
         }
         com_verbosetech_yoohoo_models_GroupRealmProxyInterface unmanagedCopy = (com_verbosetech_yoohoo_models_GroupRealmProxyInterface) unmanagedObject;
@@ -785,13 +781,13 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         if (currentDepth == maxDepth) {
             unmanagedCopy.realmSet$userIds(null);
         } else {
-            RealmList<com.verbosetech.yoohoo.models.MyString> manageduserIdsList = realmSource.realmGet$userIds();
-            RealmList<com.verbosetech.yoohoo.models.MyString> unmanageduserIdsList = new RealmList<com.verbosetech.yoohoo.models.MyString>();
+            RealmList<com.verbosetech1.yoohoo.models.MyString> manageduserIdsList = realmSource.realmGet$userIds();
+            RealmList<com.verbosetech1.yoohoo.models.MyString> unmanageduserIdsList = new RealmList<com.verbosetech1.yoohoo.models.MyString>();
             unmanagedCopy.realmSet$userIds(unmanageduserIdsList);
             int nextDepth = currentDepth + 1;
             int size = manageduserIdsList.size();
             for (int i = 0; i < size; i++) {
-                com.verbosetech.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createDetachedCopy(manageduserIdsList.get(i), nextDepth, maxDepth, cache);
+                com.verbosetech1.yoohoo.models.MyString item = com_verbosetech_yoohoo_models_MyStringRealmProxy.createDetachedCopy(manageduserIdsList.get(i), nextDepth, maxDepth, cache);
                 unmanageduserIdsList.add(item);
             }
         }
@@ -799,20 +795,20 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
         return unmanagedObject;
     }
 
-    static com.verbosetech.yoohoo.models.Group update(Realm realm, com.verbosetech.yoohoo.models.Group realmObject, com.verbosetech.yoohoo.models.Group newObject, Map<RealmModel, RealmObjectProxy> cache) {
+    static com.verbosetech1.yoohoo.models.Group update(Realm realm, com.verbosetech1.yoohoo.models.Group realmObject, com.verbosetech1.yoohoo.models.Group newObject, Map<RealmModel, RealmObjectProxy> cache) {
         com_verbosetech_yoohoo_models_GroupRealmProxyInterface realmObjectTarget = (com_verbosetech_yoohoo_models_GroupRealmProxyInterface) realmObject;
         com_verbosetech_yoohoo_models_GroupRealmProxyInterface realmObjectSource = (com_verbosetech_yoohoo_models_GroupRealmProxyInterface) newObject;
         realmObjectTarget.realmSet$name(realmObjectSource.realmGet$name());
         realmObjectTarget.realmSet$status(realmObjectSource.realmGet$status());
         realmObjectTarget.realmSet$image(realmObjectSource.realmGet$image());
-        RealmList<com.verbosetech.yoohoo.models.MyString> userIdsList = realmObjectSource.realmGet$userIds();
-        RealmList<com.verbosetech.yoohoo.models.MyString> userIdsRealmList = realmObjectTarget.realmGet$userIds();
+        RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsList = realmObjectSource.realmGet$userIds();
+        RealmList<com.verbosetech1.yoohoo.models.MyString> userIdsRealmList = realmObjectTarget.realmGet$userIds();
         if (userIdsList != null && userIdsList.size() == userIdsRealmList.size()) {
             // For lists of equal lengths, we need to set each element directly as clearing the receiver list can be wrong if the input and target list are the same.
             int objects = userIdsList.size();
             for (int i = 0; i < objects; i++) {
-                com.verbosetech.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
-                com.verbosetech.yoohoo.models.MyString cacheuserIds = (com.verbosetech.yoohoo.models.MyString) cache.get(userIdsItem);
+                com.verbosetech1.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
+                com.verbosetech1.yoohoo.models.MyString cacheuserIds = (com.verbosetech1.yoohoo.models.MyString) cache.get(userIdsItem);
                 if (cacheuserIds != null) {
                     userIdsRealmList.set(i, cacheuserIds);
                 } else {
@@ -823,8 +819,8 @@ public class com_verbosetech_yoohoo_models_GroupRealmProxy extends com.verbosete
             userIdsRealmList.clear();
             if (userIdsList != null) {
                 for (int i = 0; i < userIdsList.size(); i++) {
-                    com.verbosetech.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
-                    com.verbosetech.yoohoo.models.MyString cacheuserIds = (com.verbosetech.yoohoo.models.MyString) cache.get(userIdsItem);
+                    com.verbosetech1.yoohoo.models.MyString userIdsItem = userIdsList.get(i);
+                    com.verbosetech1.yoohoo.models.MyString cacheuserIds = (com.verbosetech1.yoohoo.models.MyString) cache.get(userIdsItem);
                     if (cacheuserIds != null) {
                         userIdsRealmList.add(cacheuserIds);
                     } else {

@@ -5,10 +5,8 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.util.JsonReader;
 import android.util.JsonToken;
-import io.realm.ProxyUtils;
-import io.realm.exceptions.RealmMigrationNeededException;
+
 import io.realm.internal.ColumnInfo;
-import io.realm.internal.OsList;
 import io.realm.internal.OsObject;
 import io.realm.internal.OsObjectSchemaInfo;
 import io.realm.internal.OsSchemaInfo;
@@ -16,22 +14,18 @@ import io.realm.internal.Property;
 import io.realm.internal.RealmObjectProxy;
 import io.realm.internal.Row;
 import io.realm.internal.Table;
-import io.realm.internal.android.JsonUtils;
-import io.realm.log.RealmLog;
+
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.json.JSONArray;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 @SuppressWarnings("all")
-public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbosetech.yoohoo.models.LogCall
+public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbosetech1.yoohoo.models.LogCall
     implements RealmObjectProxy, com_verbosetech_yoohoo_models_LogCallRealmProxyInterface {
 
     static final class LogCallColumnInfo extends ColumnInfo {
@@ -88,7 +82,7 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
     private static final OsObjectSchemaInfo expectedObjectSchemaInfo = createExpectedObjectSchemaInfo();
 
     private LogCallColumnInfo columnInfo;
-    private ProxyState<com.verbosetech.yoohoo.models.LogCall> proxyState;
+    private ProxyState<com.verbosetech1.yoohoo.models.LogCall> proxyState;
 
     com_verbosetech_yoohoo_models_LogCallRealmProxy() {
         proxyState.setConstructionFinished();
@@ -101,7 +95,7 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         }
         final BaseRealm.RealmObjectContext context = BaseRealm.objectContext.get();
         this.columnInfo = (LogCallColumnInfo) context.getColumnInfo();
-        this.proxyState = new ProxyState<com.verbosetech.yoohoo.models.LogCall>(this);
+        this.proxyState = new ProxyState<com.verbosetech1.yoohoo.models.LogCall>(this);
         proxyState.setRealm$realm(context.getRealm());
         proxyState.setRow$realm(context.getRow());
         proxyState.setAcceptDefaultValue$realm(context.getAcceptDefaultValue());
@@ -385,10 +379,10 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
     }
 
     @SuppressWarnings("cast")
-    public static com.verbosetech.yoohoo.models.LogCall createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
+    public static com.verbosetech1.yoohoo.models.LogCall createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
         final List<String> excludeFields = Collections.<String> emptyList();
-        com.verbosetech.yoohoo.models.LogCall obj = realm.createObjectInternal(com.verbosetech.yoohoo.models.LogCall.class, true, excludeFields);
+        com.verbosetech1.yoohoo.models.LogCall obj = realm.createObjectInternal(com.verbosetech1.yoohoo.models.LogCall.class, true, excludeFields);
 
         final com_verbosetech_yoohoo_models_LogCallRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) obj;
         if (json.has("timeUpdated")) {
@@ -459,9 +453,9 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
 
     @SuppressWarnings("cast")
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public static com.verbosetech.yoohoo.models.LogCall createUsingJsonStream(Realm realm, JsonReader reader)
+    public static com.verbosetech1.yoohoo.models.LogCall createUsingJsonStream(Realm realm, JsonReader reader)
         throws IOException {
-        final com.verbosetech.yoohoo.models.LogCall obj = new com.verbosetech.yoohoo.models.LogCall();
+        final com.verbosetech1.yoohoo.models.LogCall obj = new com.verbosetech1.yoohoo.models.LogCall();
         final com_verbosetech_yoohoo_models_LogCallRealmProxyInterface objProxy = (com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) obj;
         reader.beginObject();
         while (reader.hasNext()) {
@@ -538,7 +532,7 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         return realm.copyToRealm(obj);
     }
 
-    public static com.verbosetech.yoohoo.models.LogCall copyOrUpdate(Realm realm, com.verbosetech.yoohoo.models.LogCall object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.LogCall copyOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.LogCall object, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null) {
             final BaseRealm otherRealm = ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm();
             if (otherRealm.threadId != realm.threadId) {
@@ -551,20 +545,20 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         final BaseRealm.RealmObjectContext objectContext = BaseRealm.objectContext.get();
         RealmObjectProxy cachedRealmObject = cache.get(object);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.LogCall) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.LogCall) cachedRealmObject;
         }
 
         return copy(realm, object, update, cache);
     }
 
-    public static com.verbosetech.yoohoo.models.LogCall copy(Realm realm, com.verbosetech.yoohoo.models.LogCall newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
+    public static com.verbosetech1.yoohoo.models.LogCall copy(Realm realm, com.verbosetech1.yoohoo.models.LogCall newObject, boolean update, Map<RealmModel,RealmObjectProxy> cache) {
         RealmObjectProxy cachedRealmObject = cache.get(newObject);
         if (cachedRealmObject != null) {
-            return (com.verbosetech.yoohoo.models.LogCall) cachedRealmObject;
+            return (com.verbosetech1.yoohoo.models.LogCall) cachedRealmObject;
         }
 
         // rejecting default values to avoid creating unexpected objects from RealmModel/RealmList fields.
-        com.verbosetech.yoohoo.models.LogCall realmObject = realm.createObjectInternal(com.verbosetech.yoohoo.models.LogCall.class, false, Collections.<String>emptyList());
+        com.verbosetech1.yoohoo.models.LogCall realmObject = realm.createObjectInternal(com.verbosetech1.yoohoo.models.LogCall.class, false, Collections.<String>emptyList());
         cache.put(newObject, (RealmObjectProxy) realmObject);
 
         com_verbosetech_yoohoo_models_LogCallRealmProxyInterface realmObjectSource = (com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) newObject;
@@ -582,13 +576,13 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         return realmObject;
     }
 
-    public static long insert(Realm realm, com.verbosetech.yoohoo.models.LogCall object, Map<RealmModel,Long> cache) {
+    public static long insert(Realm realm, com.verbosetech1.yoohoo.models.LogCall object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.LogCall.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.LogCall.class);
         long tableNativePtr = table.getNativePtr();
-        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.LogCall.class);
+        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.LogCall.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
         Table.nativeSetLong(tableNativePtr, columnInfo.timeUpdatedIndex, rowIndex, ((com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) object).realmGet$timeUpdated(), false);
@@ -622,12 +616,12 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
     }
 
     public static void insert(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.LogCall.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.LogCall.class);
         long tableNativePtr = table.getNativePtr();
-        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.LogCall.class);
-        com.verbosetech.yoohoo.models.LogCall object = null;
+        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.LogCall.class);
+        com.verbosetech1.yoohoo.models.LogCall object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.LogCall) objects.next();
+            object = (com.verbosetech1.yoohoo.models.LogCall) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -667,13 +661,13 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         }
     }
 
-    public static long insertOrUpdate(Realm realm, com.verbosetech.yoohoo.models.LogCall object, Map<RealmModel,Long> cache) {
+    public static long insertOrUpdate(Realm realm, com.verbosetech1.yoohoo.models.LogCall object, Map<RealmModel,Long> cache) {
         if (object instanceof RealmObjectProxy && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm() != null && ((RealmObjectProxy) object).realmGet$proxyState().getRealm$realm().getPath().equals(realm.getPath())) {
             return ((RealmObjectProxy) object).realmGet$proxyState().getRow$realm().getIndex();
         }
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.LogCall.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.LogCall.class);
         long tableNativePtr = table.getNativePtr();
-        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.LogCall.class);
+        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.LogCall.class);
         long rowIndex = OsObject.createRow(table);
         cache.put(object, rowIndex);
         Table.nativeSetLong(tableNativePtr, columnInfo.timeUpdatedIndex, rowIndex, ((com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) object).realmGet$timeUpdated(), false);
@@ -719,12 +713,12 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
     }
 
     public static void insertOrUpdate(Realm realm, Iterator<? extends RealmModel> objects, Map<RealmModel,Long> cache) {
-        Table table = realm.getTable(com.verbosetech.yoohoo.models.LogCall.class);
+        Table table = realm.getTable(com.verbosetech1.yoohoo.models.LogCall.class);
         long tableNativePtr = table.getNativePtr();
-        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech.yoohoo.models.LogCall.class);
-        com.verbosetech.yoohoo.models.LogCall object = null;
+        LogCallColumnInfo columnInfo = (LogCallColumnInfo) realm.getSchema().getColumnInfo(com.verbosetech1.yoohoo.models.LogCall.class);
+        com.verbosetech1.yoohoo.models.LogCall object = null;
         while (objects.hasNext()) {
-            object = (com.verbosetech.yoohoo.models.LogCall) objects.next();
+            object = (com.verbosetech1.yoohoo.models.LogCall) objects.next();
             if (cache.containsKey(object)) {
                 continue;
             }
@@ -776,21 +770,21 @@ public class com_verbosetech_yoohoo_models_LogCallRealmProxy extends com.verbose
         }
     }
 
-    public static com.verbosetech.yoohoo.models.LogCall createDetachedCopy(com.verbosetech.yoohoo.models.LogCall realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
+    public static com.verbosetech1.yoohoo.models.LogCall createDetachedCopy(com.verbosetech1.yoohoo.models.LogCall realmObject, int currentDepth, int maxDepth, Map<RealmModel, CacheData<RealmModel>> cache) {
         if (currentDepth > maxDepth || realmObject == null) {
             return null;
         }
         CacheData<RealmModel> cachedObject = cache.get(realmObject);
-        com.verbosetech.yoohoo.models.LogCall unmanagedObject;
+        com.verbosetech1.yoohoo.models.LogCall unmanagedObject;
         if (cachedObject == null) {
-            unmanagedObject = new com.verbosetech.yoohoo.models.LogCall();
+            unmanagedObject = new com.verbosetech1.yoohoo.models.LogCall();
             cache.put(realmObject, new RealmObjectProxy.CacheData<RealmModel>(currentDepth, unmanagedObject));
         } else {
             // Reuse cached object or recreate it because it was encountered at a lower depth.
             if (currentDepth >= cachedObject.minDepth) {
-                return (com.verbosetech.yoohoo.models.LogCall) cachedObject.object;
+                return (com.verbosetech1.yoohoo.models.LogCall) cachedObject.object;
             }
-            unmanagedObject = (com.verbosetech.yoohoo.models.LogCall) cachedObject.object;
+            unmanagedObject = (com.verbosetech1.yoohoo.models.LogCall) cachedObject.object;
             cachedObject.minDepth = currentDepth;
         }
         com_verbosetech_yoohoo_models_LogCallRealmProxyInterface unmanagedCopy = (com_verbosetech_yoohoo_models_LogCallRealmProxyInterface) unmanagedObject;

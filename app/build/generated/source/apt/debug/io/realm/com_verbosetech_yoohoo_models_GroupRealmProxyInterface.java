@@ -10,6 +10,6 @@ public interface com_verbosetech_yoohoo_models_GroupRealmProxyInterface {
     public void realmSet$status(String value);
     public String realmGet$image();
     public void realmSet$image(String value);
-    public RealmList<com.verbosetech.yoohoo.models.MyString> realmGet$userIds();
-    public void realmSet$userIds(RealmList<com.verbosetech.yoohoo.models.MyString> value);
+    public RealmList<com.verbosetech1.yoohoo.models.MyString> realmGet$userIds();
+    public void realmSet$userIds(RealmList<com.verbosetech1.yoohoo.models.MyString> value);
 }

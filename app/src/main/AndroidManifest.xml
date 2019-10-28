@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.verbosetech.yoohoo">
+    package="com.verbosetech1.yoohoo">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -18,44 +18,44 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
     <application
-        android:name=".BaseApplication"
+        android:name="com.verbosetech1.yoohoo.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.MainChatActivity"
+            android:name="com.verbosetech1.yoohoo.activities.MainChatActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.SignInActivity"
-            android:parentActivityName=".activities.MainChatActivity"
+            android:name="com.verbosetech1.yoohoo.activities.SignInActivity"
+            android:parentActivityName="com.verbosetech1.yoohoo.activities.MainChatActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainChatActivity" />
+                android:value="com.verbosetech1.yoohoo.activities.MainChatActivity" />
         </activity>
-        <activity android:name=".activities.ImageViewerActivity" />
+        <activity android:name="com.verbosetech1.yoohoo.activities.ImageViewerActivity" />
 
         <service
-            android:name=".services.FirebaseChatService"
+            android:name="com.verbosetech1.yoohoo.services.FirebaseChatService"
             android:enabled="true" />
-        <service android:name=".services.MyFirebaseMessagingService">
+        <service android:name="com.verbosetech1.yoohoo.services.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".services.MyFirebaseInstanceIDService">
+        <service android:name="com.verbosetech1.yoohoo.services.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <receiver
-            android:name=".receivers.ConnectivityReceiver"
+            android:name="com.verbosetech1.yoohoo.receivers.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -78,7 +78,7 @@
             android:value="ca-app-pub-5439869944421168~4174567044" />
 
         <provider
-            android:name=".utils.MyFileProvider"
+            android:name="com.verbosetech1.yoohoo.utils.MyFileProvider"
             android:authorities="@string/authority"
             android:exported="false"
             android:grantUriPermissions="true"
@@ -89,26 +89,26 @@
         </provider>
 
         <activity
-            android:name=".activities.ContactViewerActivity"
+            android:name="com.verbosetech1.yoohoo.activities.ContactViewerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.ChatDetailActivity"
+            android:name="com.verbosetech1.yoohoo.activities.ChatDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.ChatActivity"
+            android:name="com.verbosetech1.yoohoo.activities.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.CallScreenActivity"
+            android:name="com.verbosetech1.yoohoo.activities.CallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.IncomingCallScreenActivity"
+            android:name="com.verbosetech1.yoohoo.activities.IncomingCallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.SplashActivity"
+            android:name="com.verbosetech1.yoohoo.activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -121,10 +121,10 @@
         </activity>
 
         <service
-            android:name=".services.FetchMyUsersService"
+            android:name="com.verbosetech1.yoohoo.services.FetchMyUsersService"
             android:exported="false" />
         <service
-            android:name=".services.SinchService"
+            android:name="com.verbosetech1.yoohoo.services.SinchService"
             android:enabled="true"
             android:exported="false" />
     </application>

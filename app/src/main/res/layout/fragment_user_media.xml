@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.verbosetech.yoohoo.fragments.UserMediaFragment">
+    tools:context="com.verbosetech1.yoohoo.fragments.UserMediaFragment">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"

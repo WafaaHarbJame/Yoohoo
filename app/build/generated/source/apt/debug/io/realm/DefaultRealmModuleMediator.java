@@ -26,26 +26,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(7);
-        modelClasses.add(com.verbosetech.yoohoo.models.Attachment.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.Chat.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.Group.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.LogCall.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.Message.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.MyString.class);
-        modelClasses.add(com.verbosetech.yoohoo.models.User.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.Attachment.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.Chat.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.Group.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.LogCall.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.Message.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.MyString.class);
+        modelClasses.add(com.verbosetech1.yoohoo.models.User.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
     @Override
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(7);
-        infoMap.put(com.verbosetech.yoohoo.models.Attachment.class, io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.Chat.class, io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.Group.class, io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.LogCall.class, io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.Message.class, io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.MyString.class, io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.verbosetech.yoohoo.models.User.class, io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.Attachment.class, io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.Chat.class, io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.Group.class, io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.LogCall.class, io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.Message.class, io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.MyString.class, io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.verbosetech1.yoohoo.models.User.class, io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -53,26 +53,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo createColumnInfo(Class<? extends RealmModel> clazz, OsSchemaInfo schemaInfo) {
         checkClass(clazz);
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            return io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            return io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.createColumnInfo(schemaInfo);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -81,25 +81,25 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getSimpleClassNameImpl(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
             return "Attachment";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
             return "Chat";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
             return "Group";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
             return "LogCall";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
             return "Message";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
             return "MyString";
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
             return "User";
         }
         throw getMissingProxyClassException(clazz);
@@ -112,26 +112,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy());
             }
-            if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-                return clazz.cast(new io.realm.com_verbosetech_yoohoo_models_UserRealmProxy());
+            if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+                return clazz.cast(new io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -150,26 +150,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.Attachment) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.Attachment) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.Chat) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.Chat) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.Group) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.Group) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.LogCall) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.LogCall) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.Message) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.Message) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.MyString) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.MyString) obj, update, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.copyOrUpdate(realm, (com.verbosetech.yoohoo.models.User) obj, update, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.copyOrUpdate(realm, (com.verbosetech1.yoohoo.models.User) obj, update, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -180,20 +180,20 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Attachment) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Chat) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Group) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.LogCall) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Message) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.MyString) object, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.User) object, cache);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Attachment) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Chat) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Group) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.LogCall) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Message) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.MyString) object, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.User) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -211,38 +211,38 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-                io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Attachment) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-                io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Chat) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-                io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Group) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-                io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.LogCall) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-                io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.Message) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-                io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.MyString) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-                io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insert(realm, (com.verbosetech.yoohoo.models.User) object, cache);
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Attachment) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Chat) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Group) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.LogCall) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.Message) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.MyString) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insert(realm, (com.verbosetech1.yoohoo.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insert(realm, iterator, cache);
+                if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -256,20 +256,20 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Attachment) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Chat) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Group) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.LogCall) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Message) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.MyString) obj, cache);
-        } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.User) obj, cache);
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Attachment) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Chat) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Group) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.LogCall) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Message) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.MyString) obj, cache);
+        } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.User) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -287,38 +287,38 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-                io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Attachment) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-                io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Chat) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-                io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Group) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-                io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.LogCall) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-                io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.Message) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-                io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.MyString) object, cache);
-            } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-                io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, (com.verbosetech.yoohoo.models.User) object, cache);
+            if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Attachment) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Chat) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Group) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.LogCall) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.Message) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.MyString) object, cache);
+            } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+                io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, (com.verbosetech1.yoohoo.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-                    io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
+                if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+                    io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -331,26 +331,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -360,26 +360,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -390,26 +390,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(com.verbosetech.yoohoo.models.Attachment.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_AttachmentRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.Attachment) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Attachment.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_AttachmentRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.Attachment) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Chat.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_ChatRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.Chat) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Chat.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_ChatRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.Chat) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Group.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_GroupRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.Group) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Group.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_GroupRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.Group) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.LogCall.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_LogCallRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.LogCall) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.LogCall.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_LogCallRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.LogCall) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.Message.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MessageRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.Message) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.Message.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MessageRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.Message) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.MyString.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_MyStringRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.MyString) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.MyString.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_MyStringRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.MyString) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.verbosetech.yoohoo.models.User.class)) {
-            return clazz.cast(io.realm.com_verbosetech_yoohoo_models_UserRealmProxy.createDetachedCopy((com.verbosetech.yoohoo.models.User) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(com.verbosetech1.yoohoo.models.User.class)) {
+            return clazz.cast(io.realm.com_verbosetech1_yoohoo_models_UserRealmProxy.createDetachedCopy((com.verbosetech1.yoohoo.models.User) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
